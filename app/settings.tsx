@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 
 import { IconSymbol } from '@/components/ui/icon-symbol';
 import { ThemedText } from '@/components/themed-text';
-import { Colors, type AppTheme } from '@/constants/theme';
+import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
 import { useGoogleCalendarAuth } from '@/hooks/use-google-calendar-auth';
 import { getGoogleCalendarConfig, getScheduleTermValidationMessage, hasValidScheduleTermDates } from '@/lib/google-calendar-config';
@@ -28,6 +28,29 @@ const THEME_OPTIONS: { value: ThemePreference; title: string; description: strin
     value: 'dark',
     title: 'Modo oscuro',
     description: 'Visual premium con foco en contraste y calendario.',
+  },
+];
+
+const HELP_ITEMS = [
+  {
+    title: 'Generador',
+    description: 'Elegí materias y la app arma horarios sin choques.',
+  },
+  {
+    title: 'Catálogo',
+    description: 'Buscá y revisá la información de materias y grupos.',
+  },
+  {
+    title: 'Favoritos',
+    description: 'Guardá horarios para compararlos y decidir después.',
+  },
+  {
+    title: 'Google Calendar',
+    description: 'Conectá tu cuenta, guardá el periodo y enviá un favorito.',
+  },
+  {
+    title: 'Exportar PDF',
+    description: 'Exportá favoritos guardados sin conectar Google.',
   },
 ];
 
@@ -186,8 +209,26 @@ export default function SettingsScreen() {
       <View style={[styles.heroCard, { backgroundColor: colors.surface, borderColor: colors.border, shadowColor: colors.shadow }]}> 
         <ThemedText type="title">Configuración</ThemedText>
         <ThemedText style={{ color: colors.textMuted }}>
-          Personalizá la experiencia de la Comunidad DCI y controlá cómo querés ver la app.
+          Organizá tu experiencia: apariencia, conexión con Google, periodo académico y horarios guardados.
         </ThemedText>
+      </View>
+
+      <View style={[styles.card, { backgroundColor: colors.surface, borderColor: colors.border, shadowColor: colors.shadow }]}> 
+        <View style={styles.sectionTitleWrap}>
+          <ThemedText type="subtitle">Ayuda rápida</ThemedText>
+          <ThemedText style={{ color: colors.textMuted }}>
+            Usá cada sección para avanzar sin mezclar pasos.
+          </ThemedText>
+        </View>
+
+        <View style={styles.helpList}>
+          {HELP_ITEMS.map((item) => (
+            <View key={item.title} style={[styles.helpItem, { backgroundColor: colors.surfaceElevated, borderColor: colors.border }]}> 
+              <ThemedText type="defaultSemiBold">{item.title}</ThemedText>
+              <ThemedText style={{ color: colors.textMuted }}>{item.description}</ThemedText>
+            </View>
+          ))}
+        </View>
       </View>
 
       <View style={[styles.card, { backgroundColor: colors.surface, borderColor: colors.border, shadowColor: colors.shadow }]}> 
@@ -232,9 +273,9 @@ export default function SettingsScreen() {
 
       <View style={[styles.card, { backgroundColor: colors.surface, borderColor: colors.border, shadowColor: colors.shadow }]}> 
         <View style={styles.sectionTitleWrap}>
-          <ThemedText type="subtitle">Google Calendar</ThemedText>
+          <ThemedText type="subtitle">Conexión con Google</ThemedText>
           <ThemedText style={{ color: colors.textMuted }}>
-            Conectá Google y enviá tus horarios favoritos como eventos semanales.
+            Iniciá sesión para habilitar el envío de favoritos a Google Calendar.
           </ThemedText>
         </View>
 
@@ -247,11 +288,6 @@ export default function SettingsScreen() {
           <StatPill
             label="Client ID"
             value={googleCalendarAuth.isConfigured ? 'Configurado' : 'Pendiente'}
-            colors={colors}
-          />
-          <StatPill
-            label="Periodo"
-            value={formatScheduleTermStatus(scheduleTermStartDate, scheduleTermEndDate, scheduleTermValidationMessage)}
             colors={colors}
           />
         </View>
@@ -268,57 +304,6 @@ export default function SettingsScreen() {
           Estado: {googleCalendarAuth.accessToken ? 'Conectado en esta sesión' : 'Sin conexión activa'}
         </ThemedText>
 
-        <View style={[styles.termDatesCard, { backgroundColor: colors.surfaceElevated, borderColor: colors.border }]}> 
-          <View style={styles.sectionTitleWrap}>
-            <ThemedText type="defaultSemiBold">Periodo académico</ThemedText>
-            <ThemedText style={{ color: colors.textMuted }}>
-              Escribí las fechas reales del semestre. Las clases se repetirán semanalmente dentro de ese rango.
-            </ThemedText>
-          </View>
-
-          <View style={styles.termDateFields}>
-            <View style={styles.termDateInputWrap}>
-              <ThemedText style={[styles.inputLabel, { color: colors.textMuted }]}>Inicio</ThemedText>
-              <TextInput
-                autoCapitalize="none"
-                keyboardType="numbers-and-punctuation"
-                onChangeText={setDraftTermStartDate}
-                placeholder="YYYY-MM-DD"
-                placeholderTextColor={colors.textMuted}
-                style={[styles.termDateInput, { color: colors.text, borderColor: colors.borderStrong, backgroundColor: colors.surface }]}
-                value={draftTermStartDate}
-              />
-            </View>
-            <View style={styles.termDateInputWrap}>
-              <ThemedText style={[styles.inputLabel, { color: colors.textMuted }]}>Fin</ThemedText>
-              <TextInput
-                autoCapitalize="none"
-                keyboardType="numbers-and-punctuation"
-                onChangeText={setDraftTermEndDate}
-                placeholder="YYYY-MM-DD"
-                placeholderTextColor={colors.textMuted}
-                style={[styles.termDateInput, { color: colors.text, borderColor: colors.borderStrong, backgroundColor: colors.surface }]}
-                value={draftTermEndDate}
-              />
-            </View>
-          </View>
-
-          <ThemedText style={{ color: draftScheduleTermValidationMessage ? colors.textMuted : colors.tint }}>
-            Estado: {draftScheduleTermValidationMessage || 'Periodo válido'}
-          </ThemedText>
-
-          <Pressable
-            onPress={() => void saveScheduleTermDates()}
-            style={[styles.saveTermButton, { backgroundColor: colors.tint }]}> 
-            <IconSymbol color={colors.tintContrast} name="paperplane.fill" size={16} />
-            <ThemedText style={{ color: colors.tintContrast }}>Guardar periodo</ThemedText>
-          </Pressable>
-        </View>
-
-        <ThemedText style={{ color: hasScheduleTermDates ? colors.tint : colors.textMuted }}>
-          Periodo académico: {hasScheduleTermDates ? `${scheduleTermStartDate} a ${scheduleTermEndDate} · ${googleCalendarConfig.timeZone || 'sin zona horaria'}` : 'pendiente en Ajustes'}
-        </ThemedText>
-
         {googleCalendarAuth.errorMessage ? (
           <ThemedText style={{ color: colors.danger }}>{googleCalendarAuth.errorMessage}</ThemedText>
         ) : null}
@@ -326,12 +311,6 @@ export default function SettingsScreen() {
         {!googleCalendarAuth.isConfigured ? (
           <ThemedText style={{ color: colors.textMuted }}>
             Falta completar el client ID correspondiente en `.env`. No uses credenciales reales dentro del código.
-          </ThemedText>
-        ) : null}
-
-        {!googleCalendarConfig.timeZone ? (
-          <ThemedText style={{ color: colors.textMuted }}>
-            Falta configurar la zona horaria en `.env`. Las fechas del semestre se guardan aquí en Ajustes.
           </ThemedText>
         ) : null}
 
@@ -353,14 +332,93 @@ export default function SettingsScreen() {
       </View>
 
       <View style={[styles.card, { backgroundColor: colors.surface, borderColor: colors.border, shadowColor: colors.shadow }]}> 
-        <ThemedText type="subtitle">Favoritos guardados</ThemedText>
-        <ThemedText style={{ color: colors.textMuted }}>
-          Tenés {favorites.length} horarios marcados como favoritos.
-        </ThemedText>
+        <View style={styles.sectionTitleWrap}>
+          <ThemedText type="subtitle">Periodo académico</ThemedText>
+          <ThemedText style={{ color: colors.textMuted }}>
+            Definí desde cuándo y hasta cuándo se repiten las clases en Google Calendar.
+          </ThemedText>
+        </View>
 
         <View style={styles.statsRow}>
-          <StatPill label="Tema activo" value={formatThemeLabel(themePreference, colorScheme)} colors={colors} />
+          <StatPill
+            label="Periodo"
+            value={formatScheduleTermStatus(scheduleTermStartDate, scheduleTermEndDate, scheduleTermValidationMessage)}
+            colors={colors}
+          />
+          <StatPill
+            label="Zona horaria"
+            value={googleCalendarConfig.timeZone || 'Pendiente'}
+            colors={colors}
+          />
+        </View>
+
+        <View style={styles.termDateFields}>
+          <View style={styles.termDateInputWrap}>
+            <ThemedText style={[styles.inputLabel, { color: colors.textMuted }]}>Inicio</ThemedText>
+            <TextInput
+              autoCapitalize="none"
+              keyboardType="numbers-and-punctuation"
+              onChangeText={setDraftTermStartDate}
+              placeholder="YYYY-MM-DD"
+              placeholderTextColor={colors.textMuted}
+              style={[styles.termDateInput, { color: colors.text, borderColor: colors.borderStrong, backgroundColor: colors.surface }]}
+              value={draftTermStartDate}
+            />
+          </View>
+          <View style={styles.termDateInputWrap}>
+            <ThemedText style={[styles.inputLabel, { color: colors.textMuted }]}>Fin</ThemedText>
+            <TextInput
+              autoCapitalize="none"
+              keyboardType="numbers-and-punctuation"
+              onChangeText={setDraftTermEndDate}
+              placeholder="YYYY-MM-DD"
+              placeholderTextColor={colors.textMuted}
+              style={[styles.termDateInput, { color: colors.text, borderColor: colors.borderStrong, backgroundColor: colors.surface }]}
+              value={draftTermEndDate}
+            />
+          </View>
+        </View>
+
+        <ThemedText style={{ color: draftScheduleTermValidationMessage ? colors.textMuted : colors.tint }}>
+          Estado: {draftScheduleTermValidationMessage || 'Periodo válido'}
+        </ThemedText>
+
+        <ThemedText style={{ color: hasScheduleTermDates ? colors.tint : colors.textMuted }}>
+          Guardado: {hasScheduleTermDates ? `${scheduleTermStartDate} a ${scheduleTermEndDate}` : 'pendiente'}
+        </ThemedText>
+
+        {!googleCalendarConfig.timeZone ? (
+          <ThemedText style={{ color: colors.textMuted }}>
+            Falta configurar la zona horaria en `.env`. Las fechas del semestre se guardan aquí en Ajustes.
+          </ThemedText>
+        ) : null}
+
+        <Pressable
+          onPress={() => void saveScheduleTermDates()}
+          style={[styles.saveTermButton, { backgroundColor: colors.tint }]}> 
+          <IconSymbol color={colors.tintContrast} name="paperplane.fill" size={16} />
+          <ThemedText style={{ color: colors.tintContrast }}>Guardar periodo</ThemedText>
+        </Pressable>
+      </View>
+
+      <View style={[styles.card, { backgroundColor: colors.surface, borderColor: colors.border, shadowColor: colors.shadow }]}> 
+        <View style={styles.sectionTitleWrap}>
+          <ThemedText type="subtitle">Horarios favoritos</ThemedText>
+          <ThemedText style={{ color: colors.textMuted }}>
+            Gestioná horarios guardados, exportá PDF o enviá uno a Google Calendar.
+          </ThemedText>
+        </View>
+
+        <View style={styles.statsRow}>
           <StatPill label="Favoritos" value={String(favorites.length)} colors={colors} />
+          <StatPill label="Google" value={googleCalendarAuth.accessToken ? 'Conectado' : 'Sin conexión'} colors={colors} />
+        </View>
+
+        <View style={[styles.favoriteHintCard, { backgroundColor: colors.tintSoft, borderColor: colors.border }]}> 
+          <ThemedText type="defaultSemiBold">Para enviar a Google</ThemedText>
+          <ThemedText style={{ color: colors.textMuted }}>
+            Primero conectá Google y guardá el periodo académico. Para compartir sin Google, usá Exportar PDF.
+          </ThemedText>
         </View>
 
         {favorites.length > 1 ? (
@@ -368,7 +426,7 @@ export default function SettingsScreen() {
             <View style={styles.sectionTitleWrap}>
               <ThemedText type="defaultSemiBold">Exportación múltiple</ThemedText>
               <ThemedText style={{ color: colors.textMuted }}>
-                Seleccioná varios favoritos y exportalos juntos en un solo PDF premium.
+                Marcá varios favoritos y exportalos juntos en un solo PDF.
               </ThemedText>
             </View>
             <Pressable
@@ -547,14 +605,6 @@ function formatSavedAt(savedAt: FavoriteSchedule['savedAt']) {
   });
 }
 
-function formatThemeLabel(preference: ThemePreference, resolvedTheme: AppTheme) {
-  if (preference === 'system') {
-    return `Sistema (${resolvedTheme === 'dark' ? 'oscuro' : 'claro'})`;
-  }
-
-  return preference === 'dark' ? 'Oscuro' : 'Claro';
-}
-
 function formatGooglePlatformLabel(platform: 'android' | 'ios' | 'web') {
   if (platform === 'android') {
     return 'Android';
@@ -616,6 +666,15 @@ const styles = StyleSheet.create({
   optionsList: {
     gap: 10,
   },
+  helpList: {
+    gap: 10,
+  },
+  helpItem: {
+    borderWidth: 1,
+    borderRadius: 18,
+    padding: 14,
+    gap: 4,
+  },
   sectionTitleWrap: {
     gap: 4,
   },
@@ -661,12 +720,6 @@ const styles = StyleSheet.create({
     borderRadius: 18,
     padding: 14,
     gap: 6,
-  },
-  termDatesCard: {
-    borderWidth: 1,
-    borderRadius: 18,
-    padding: 14,
-    gap: 12,
   },
   termDateFields: {
     flexDirection: 'row',
@@ -714,6 +767,12 @@ const styles = StyleSheet.create({
   },
   favoriteList: {
     gap: 12,
+  },
+  favoriteHintCard: {
+    borderWidth: 1,
+    borderRadius: 18,
+    padding: 14,
+    gap: 4,
   },
   favoriteCard: {
     borderWidth: 1,
