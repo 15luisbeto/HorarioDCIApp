@@ -1,6 +1,6 @@
 import { type ReactNode, useEffect, useMemo, useRef, useState } from 'react';
 import { Animated, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
-import { type Href, useRouter } from 'expo-router';
+import { Redirect, type Href, useRouter } from 'expo-router';
 
 import { IconSymbol } from '@/components/ui/icon-symbol';
 import { ThemedText } from '@/components/themed-text';
@@ -8,7 +8,6 @@ import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
 import {
   analyzeCourseConflicts,
-  buildScheduleOptionFromCourses,
   createFavoriteSchedule,
   DAY_ORDER,
   dataset,
@@ -16,7 +15,6 @@ import {
   formatTeachers,
   generateSchedules,
   searchCourseNames,
-  type FavoriteSchedule,
   type ScheduleOption,
 } from '@/lib/schedules';
 import { useAppPreferences } from '@/providers/app-preferences';
@@ -32,9 +30,10 @@ export default function GeneratorScreen() {
   const router = useRouter();
   const colorScheme = useColorScheme() ?? 'light';
   const colors = Colors[colorScheme];
-  const { favorites, isFavorite, toggleFavorite } = useAppPreferences();
+  const { hasSeenWelcome, isFavorite, isHydrated, toggleFavorite } = useAppPreferences();
 
   const [query, setQuery] = useState('');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [selectedCourseNames, setSelectedCourseNames] = useState<string[]>([]);
 
   const suggestions = useMemo(
@@ -50,11 +49,6 @@ export default function GeneratorScreen() {
   const conflictAnalysis = useMemo(
     () => analyzeCourseConflicts(selectedCourseNames, generationResult.totalFound > 0),
     [generationResult.totalFound, selectedCourseNames]
-  );
-
-  const favoriteOptions = useMemo(
-    () => favorites.map((favorite) => ({ favorite, option: buildScheduleOptionFromCourses(favorite.courses, favorite.id) })),
-    [favorites]
   );
 
   const countLabel = generationResult.countCapped
@@ -80,6 +74,19 @@ export default function GeneratorScreen() {
     void toggleFavorite(createFavoriteSchedule(option));
   }
 
+  function navigateFromMenu(href: Href) {
+    setIsMenuOpen(false);
+    router.push(href);
+  }
+
+  if (!isHydrated) {
+    return <View style={[styles.screen, { backgroundColor: colors.background }]} />;
+  }
+
+  if (!hasSeenWelcome) {
+    return <Redirect href={'/welcome' as Href} />;
+  }
+
   return (
     <ScrollView
       style={[styles.screen, { backgroundColor: colors.background }]}
@@ -94,12 +101,37 @@ export default function GeneratorScreen() {
               Elegí materias, detectá riesgos de choque antes de generar y compará combinaciones en un calendario semanal limpio.
             </ThemedText>
           </View>
-          <Pressable
-            onPress={() => router.push('/settings' as Href)}
-            style={[styles.settingsButton, { backgroundColor: colors.surfaceElevated, borderColor: colors.border }]}>
-            <IconSymbol color={colors.tint} name="gearshape.fill" size={20} />
-          </Pressable>
+          <View style={styles.headerActions}>
+            <Pressable
+              onPress={() => router.push('/settings' as Href)}
+              style={[styles.settingsButton, { backgroundColor: colors.surfaceElevated, borderColor: colors.border }]}> 
+              <IconSymbol color={colors.tint} name="gearshape.fill" size={20} />
+            </Pressable>
+            <Pressable
+              onPress={() => setIsMenuOpen((current) => !current)}
+              style={[styles.settingsButton, { backgroundColor: colors.surfaceElevated, borderColor: colors.border }]}> 
+              <IconSymbol color={colors.tint} name="line.3.horizontal" size={20} />
+            </Pressable>
+          </View>
         </View>
+        {isMenuOpen ? (
+          <View style={[styles.menuPanel, { backgroundColor: colors.surfaceElevated, borderColor: colors.border }]}> 
+            <Pressable onPress={() => navigateFromMenu('/favorites' as Href)} style={styles.menuItem}>
+              <View style={styles.menuItemText}>
+                <ThemedText type="defaultSemiBold">Horarios favoritos</ThemedText>
+                <ThemedText style={{ color: colors.textMuted }}>Revisá y ordená tus combinaciones guardadas.</ThemedText>
+              </View>
+              <IconSymbol color={colors.tint} name="chevron.right" size={18} />
+            </Pressable>
+            <Pressable onPress={() => navigateFromMenu('/exports' as Href)} style={styles.menuItem}>
+              <View style={styles.menuItemText}>
+                <ThemedText type="defaultSemiBold">Exportar horarios</ThemedText>
+                <ThemedText style={{ color: colors.textMuted }}>Conectá Google, definí periodo y compartí favoritos.</ThemedText>
+              </View>
+              <IconSymbol color={colors.tint} name="chevron.right" size={18} />
+            </Pressable>
+          </View>
+        ) : null}
         <View style={styles.metadataRow}>
           <MetadataPill label="Periodo" value={dataset.period} colors={colors} tone="accent" />
           <MetadataPill label="Actualizado" value={dataset.updated_at} colors={colors} tone="neutral" />
@@ -237,41 +269,6 @@ export default function GeneratorScreen() {
                 ))}
               </View>
             </>
-          )}
-        </View>
-      </AnimatedSection>
-
-      <AnimatedSection delay={220}>
-        <View style={[styles.card, { backgroundColor: colors.surface, borderColor: colors.border, shadowColor: colors.shadow }]}> 
-          <View style={styles.sectionHeader}>
-            <View style={styles.sectionTitleWrap}>
-              <ThemedText type="subtitle">3. Horarios favoritos</ThemedText>
-              <ThemedText style={{ color: colors.textMuted }}>
-                Guardá tus combinaciones preferidas para compararlas después sin volver a buscarlas.
-              </ThemedText>
-            </View>
-            <View style={[styles.selectionCountBadge, { backgroundColor: colors.tintSoft }]}> 
-              <ThemedText type="defaultSemiBold" style={{ color: colors.tint }}>{favorites.length}</ThemedText>
-            </View>
-          </View>
-
-          {favoriteOptions.length === 0 ? (
-            <ThemedText style={[styles.emptyCopy, { color: colors.textMuted }]}>Todavía no guardaste ningún horario favorito.</ThemedText>
-          ) : (
-            <View style={styles.scheduleList}>
-              {favoriteOptions.map(({ favorite, option }, index) => (
-                <ScheduleCalendarCard
-                  key={`favorite-${favorite.id}`}
-                  option={option}
-                  index={index}
-                  colorScheme={colorScheme}
-                  title={favorite.title}
-                  caption={`Guardado ${formatSavedAt(favorite.savedAt)}`}
-                  isFavorite
-                  onToggleFavorite={() => void toggleFavorite(favorite)}
-                />
-              ))}
-            </View>
           )}
         </View>
       </AnimatedSection>
@@ -607,15 +604,6 @@ function MetadataPill({
   );
 }
 
-function formatSavedAt(savedAt: FavoriteSchedule['savedAt']) {
-  return new Date(savedAt).toLocaleString('es-MX', {
-    day: '2-digit',
-    month: 'short',
-    hour: '2-digit',
-    minute: '2-digit',
-  });
-}
-
 function toMinutes(time: string) {
   const [hours, minutes] = time.split(':').map(Number);
   return hours * 60 + minutes;
@@ -667,6 +655,31 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  headerActions: {
+    flexDirection: 'row',
+    gap: 8,
+  },
+  menuPanel: {
+    alignSelf: 'flex-end',
+    width: '100%',
+    maxWidth: 360,
+    borderWidth: 1,
+    borderRadius: 22,
+    padding: 8,
+    gap: 4,
+  },
+  menuItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: 12,
+    paddingHorizontal: 12,
+    paddingVertical: 12,
+  },
+  menuItemText: {
+    flex: 1,
+    gap: 2,
   },
   metadataRow: {
     flexDirection: 'row',

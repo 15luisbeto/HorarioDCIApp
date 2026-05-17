@@ -78,7 +78,7 @@ export function useGoogleCalendarAuth() {
 
   async function signIn() {
     if (!isConfigured || !request) {
-      return;
+      return false;
     }
 
     setErrorMessage(null);
@@ -91,9 +91,14 @@ export function useGoogleCalendarAuth() {
         sessionAccessToken = nextAccessToken;
         setAccessToken(nextAccessToken);
         setErrorMessage(null);
+        return true;
       }
+
+      setErrorMessage('No se completó la conexión con Google Calendar.');
+      return false;
     } catch (error) {
       setErrorMessage(error instanceof Error ? error.message : 'No se pudo abrir el flujo de Google.');
+      return false;
     }
   }
 

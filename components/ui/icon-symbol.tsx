@@ -19,6 +19,7 @@ const MAPPING = {
   'calendar.badge.clock': 'schedule',
   'gearshape.fill': 'settings',
   'house.fill': 'home',
+  'line.3.horizontal': 'menu',
   'paperplane.fill': 'send',
   'chevron.left.forwardslash.chevron.right': 'code',
   'chevron.right': 'chevron-right',

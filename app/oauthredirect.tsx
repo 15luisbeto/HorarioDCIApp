@@ -1,5 +1,5 @@
-import { Redirect } from 'expo-router';
+import { Redirect, type Href } from 'expo-router';
 
 export default function OAuthRedirectScreen() {
-  return <Redirect href="/settings" />;
+  return <Redirect href={'/exports' as Href} />;
 }

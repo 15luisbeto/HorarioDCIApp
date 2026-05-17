@@ -8,12 +8,16 @@ import type { FavoriteSchedule } from '@/lib/schedules';
 const THEME_PREFERENCE_KEY = 'horariodciapp.theme-preference';
 const FAVORITES_KEY = 'horariodciapp.favorite-schedules';
 const SCHEDULE_TERM_DATES_KEY = 'horariodciapp.schedule-term-dates';
+const HAS_SEEN_WELCOME_KEY = 'horariodciapp.has-seen-welcome';
 
 export type ThemePreference = 'system' | AppTheme;
 
 type AppPreferencesContextValue = {
   colorScheme: AppTheme;
+  completeWelcome: () => Promise<void>;
   themePreference: ThemePreference;
+  hasSeenWelcome: boolean;
+  isHydrated: boolean;
   setThemePreference: (value: ThemePreference) => Promise<void>;
   favorites: FavoriteSchedule[];
   scheduleTermEndDate: string;
@@ -32,6 +36,8 @@ export function AppPreferencesProvider({ children }: { children: ReactNode }) {
   const deviceColorScheme = useDeviceColorScheme();
   const [themePreference, setThemePreferenceState] = useState<ThemePreference>('system');
   const [favorites, setFavorites] = useState<FavoriteSchedule[]>([]);
+  const [hasSeenWelcome, setHasSeenWelcome] = useState(false);
+  const [isHydrated, setIsHydrated] = useState(false);
   const [scheduleTermStartDate, setScheduleTermStartDate] = useState('');
   const [scheduleTermEndDate, setScheduleTermEndDate] = useState('');
 
@@ -44,10 +50,11 @@ export function AppPreferencesProvider({ children }: { children: ReactNode }) {
 
     async function hydrate() {
       try {
-        const [storedThemePreference, storedFavorites, storedScheduleTermDates] = await Promise.all([
+        const [storedThemePreference, storedFavorites, storedScheduleTermDates, storedHasSeenWelcome] = await Promise.all([
           Storage.getItem(THEME_PREFERENCE_KEY),
           Storage.getItem(FAVORITES_KEY),
           Storage.getItem(SCHEDULE_TERM_DATES_KEY),
+          Storage.getItem(HAS_SEEN_WELCOME_KEY),
         ]);
 
         if (!isMounted) {
@@ -71,12 +78,19 @@ export function AppPreferencesProvider({ children }: { children: ReactNode }) {
           setScheduleTermStartDate(typeof parsed.startDate === 'string' ? parsed.startDate : '');
           setScheduleTermEndDate(typeof parsed.endDate === 'string' ? parsed.endDate : '');
         }
+
+        setHasSeenWelcome(storedHasSeenWelcome === 'true');
       } catch {
         if (isMounted) {
           setFavorites([]);
+          setHasSeenWelcome(false);
           setThemePreferenceState('system');
           setScheduleTermStartDate('');
           setScheduleTermEndDate('');
+        }
+      } finally {
+        if (isMounted) {
+          setIsHydrated(true);
         }
       }
     }
@@ -99,6 +113,11 @@ export function AppPreferencesProvider({ children }: { children: ReactNode }) {
   const setThemePreference = useCallback(async (value: ThemePreference) => {
     setThemePreferenceState(value);
     await Storage.setItem(THEME_PREFERENCE_KEY, value);
+  }, []);
+
+  const completeWelcome = useCallback(async () => {
+    setHasSeenWelcome(true);
+    await Storage.setItem(HAS_SEEN_WELCOME_KEY, 'true');
   }, []);
 
   const setScheduleTermDates = useCallback(async (startDate: string, endDate: string) => {
@@ -178,7 +197,10 @@ export function AppPreferencesProvider({ children }: { children: ReactNode }) {
   const value = useMemo<AppPreferencesContextValue>(
     () => ({
       colorScheme,
+      completeWelcome,
       themePreference,
+      hasSeenWelcome,
+      isHydrated,
       setThemePreference,
       favorites,
       scheduleTermEndDate,
@@ -192,7 +214,10 @@ export function AppPreferencesProvider({ children }: { children: ReactNode }) {
     }),
     [
       colorScheme,
+      completeWelcome,
       favorites,
+      hasSeenWelcome,
+      isHydrated,
       isFavorite,
       moveFavorite,
       removeFavorite,
