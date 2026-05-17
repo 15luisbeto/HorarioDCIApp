@@ -112,7 +112,7 @@ La app usa estos identificadores nativos para OAuth:
 | --- | --- |
 | Android package | `com.luisbeto.horariodciapp` |
 | iOS bundle ID | `com.luisbeto.horariodciapp` |
-| Scheme | `horariodciapp` |
+| Scheme | `com.luisbeto.horariodciapp` |
 
 ### Checklist en Google Cloud
 
@@ -125,10 +125,10 @@ La app usa estos identificadores nativos para OAuth:
    - **Web**: usar el redirect URI que muestra la app en `Configuración > Google Calendar`.
 5. Copiar los client IDs a `.env`.
 
-En Android con Development Build, Google vuelve a la app por el scheme `horariodciapp` y la ruta de retorno:
+En Android con Development Build, Google vuelve a la app por el scheme nativo del package y la ruta de retorno:
 
 ```txt
-horariodciapp://oauthredirect
+com.luisbeto.horariodciapp:/oauthredirect
 ```
 
 El OAuth client Android se valida principalmente con package + SHA-1. Si Google Cloud muestra la opción de **Custom URI scheme**, debe estar habilitada.

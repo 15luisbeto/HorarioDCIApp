@@ -27,10 +27,12 @@ function getAuthPlatform(): GoogleCalendarAuthPlatform {
 export function useGoogleCalendarAuth() {
   const config = getGoogleCalendarConfig();
   const platform = getAuthPlatform();
-  const redirectUri = AuthSession.makeRedirectUri({
-    path: 'oauthredirect',
-    scheme: GOOGLE_CALENDAR_REDIRECT_SCHEME,
-  });
+  const redirectUri = platform === 'web'
+    ? AuthSession.makeRedirectUri({
+        path: 'oauthredirect',
+        scheme: GOOGLE_CALENDAR_REDIRECT_SCHEME,
+      })
+    : `${GOOGLE_CALENDAR_REDIRECT_SCHEME}:/oauthredirect`;
   const isConfigured = hasGoogleCalendarClientId(platform);
   const [accessToken, setAccessToken] = useState<string | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);

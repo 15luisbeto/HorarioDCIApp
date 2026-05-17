@@ -1,6 +1,6 @@
 import Constants from 'expo-constants';
 
-export const GOOGLE_CALENDAR_REDIRECT_SCHEME = 'horariodciapp';
+export const GOOGLE_CALENDAR_REDIRECT_SCHEME = 'com.luisbeto.horariodciapp';
 
 export const GOOGLE_CALENDAR_SCOPES = [
   'openid',
