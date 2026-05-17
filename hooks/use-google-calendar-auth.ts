@@ -15,6 +15,15 @@ WebBrowser.maybeCompleteAuthSession();
 type GoogleCalendarAuthPlatform = 'android' | 'ios' | 'web';
 
 const GOOGLE_CLIENT_ID_PLACEHOLDER = 'missing-google-calendar-client-id.apps.googleusercontent.com';
+let sessionAccessToken: string | null = null;
+
+function getAccessTokenFromResponse(response: AuthSession.AuthSessionResult | null) {
+  if (response?.type !== 'success') {
+    return null;
+  }
+
+  return response.authentication?.accessToken ?? response.params.access_token ?? null;
+}
 
 function getAuthPlatform(): GoogleCalendarAuthPlatform {
   if (Platform.OS === 'android' || Platform.OS === 'ios') {
@@ -34,7 +43,7 @@ export function useGoogleCalendarAuth() {
       })
     : `${GOOGLE_CALENDAR_REDIRECT_SCHEME}:/oauthredirect`;
   const isConfigured = hasGoogleCalendarClientId(platform);
-  const [accessToken, setAccessToken] = useState<string | null>(null);
+  const [accessToken, setAccessToken] = useState<string | null>(sessionAccessToken);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const [request, response, promptAsync] = Google.useAuthRequest(
@@ -53,13 +62,15 @@ export function useGoogleCalendarAuth() {
     }
 
     if (response.type === 'success') {
-      const nextAccessToken = response.authentication?.accessToken ?? null;
+      const nextAccessToken = getAccessTokenFromResponse(response);
+      sessionAccessToken = nextAccessToken;
       setAccessToken(nextAccessToken);
       setErrorMessage(nextAccessToken ? null : 'Google no devolvió un token de acceso.');
       return;
     }
 
     if (response.type === 'error') {
+      sessionAccessToken = null;
       setAccessToken(null);
       setErrorMessage(response.error?.message ?? 'No se pudo completar la autenticación con Google.');
     }
@@ -73,7 +84,14 @@ export function useGoogleCalendarAuth() {
     setErrorMessage(null);
 
     try {
-      await promptAsync();
+      const result = await promptAsync();
+      const nextAccessToken = getAccessTokenFromResponse(result);
+
+      if (nextAccessToken) {
+        sessionAccessToken = nextAccessToken;
+        setAccessToken(nextAccessToken);
+        setErrorMessage(null);
+      }
     } catch (error) {
       setErrorMessage(error instanceof Error ? error.message : 'No se pudo abrir el flujo de Google.');
     }
