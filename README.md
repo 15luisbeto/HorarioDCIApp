@@ -1,50 +1,31 @@
-# Welcome to your Expo app 👋
+# HorarioDCIApp
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+App Expo para ayudar a estudiantes de DCI a generar horarios sin choques, guardar combinaciones favoritas y exportarlas.
 
-## Get started
+## Inicio rápido
 
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
+1. Instalar dependencias:
 
    ```bash
-   npx expo start
+   pnpm install
    ```
 
-In the output, you'll find options to open the app in a
+2. Iniciar la app:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   ```bash
+   pnpm start
+   ```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+3. Abrir con Expo Go, Android, iOS o web desde la terminal de Expo.
 
-## Get a fresh project
+## Funcionalidad principal
 
-When you're ready, run:
+- Catálogo de materias desde `data/schedules.ugto.2026-1.json`.
+- Generador de combinaciones sin conflictos de horario.
+- Vista semanal tipo calendario.
+- Favoritos locales con edición, ordenamiento y exportación PDF.
+- Preferencia de tema claro, oscuro o sistema.
 
-```bash
-npm run reset-project
-```
+## Datos académicos
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+El JSON de materias se genera localmente desde páginas públicas de UGTO. El script Python usado para regenerarlo se mantiene fuera del repositorio público porque las rutas cambian cada semestre.

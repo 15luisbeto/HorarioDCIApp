@@ -31,15 +31,24 @@ yarn-error.*
 *.pem
 
 # local env files
+.env
+.envrc
 .env*.local
 
-# typescript
+# TypeScript
 *.tsbuildinfo
 
-# local schedule scraping tools
+# Local schedule scraping tools
 *.py
-*.py[cod]
+*.py[codz]
+*$py.class
 __pycache__/
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
 
 app-example
 
