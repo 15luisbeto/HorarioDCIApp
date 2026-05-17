@@ -7,6 +7,7 @@ import type { FavoriteSchedule } from '@/lib/schedules';
 
 const THEME_PREFERENCE_KEY = 'horariodciapp.theme-preference';
 const FAVORITES_KEY = 'horariodciapp.favorite-schedules';
+const SCHEDULE_TERM_DATES_KEY = 'horariodciapp.schedule-term-dates';
 
 export type ThemePreference = 'system' | AppTheme;
 
@@ -15,6 +16,9 @@ type AppPreferencesContextValue = {
   themePreference: ThemePreference;
   setThemePreference: (value: ThemePreference) => Promise<void>;
   favorites: FavoriteSchedule[];
+  scheduleTermEndDate: string;
+  scheduleTermStartDate: string;
+  setScheduleTermDates: (startDate: string, endDate: string) => Promise<void>;
   toggleFavorite: (schedule: FavoriteSchedule) => Promise<void>;
   removeFavorite: (scheduleId: string) => Promise<void>;
   renameFavorite: (scheduleId: string, title: string) => Promise<void>;
@@ -28,6 +32,8 @@ export function AppPreferencesProvider({ children }: { children: ReactNode }) {
   const deviceColorScheme = useDeviceColorScheme();
   const [themePreference, setThemePreferenceState] = useState<ThemePreference>('system');
   const [favorites, setFavorites] = useState<FavoriteSchedule[]>([]);
+  const [scheduleTermStartDate, setScheduleTermStartDate] = useState('');
+  const [scheduleTermEndDate, setScheduleTermEndDate] = useState('');
 
   const persistFavorites = useCallback(async (next: FavoriteSchedule[]) => {
     await Storage.setItem(FAVORITES_KEY, JSON.stringify(next));
@@ -38,9 +44,10 @@ export function AppPreferencesProvider({ children }: { children: ReactNode }) {
 
     async function hydrate() {
       try {
-        const [storedThemePreference, storedFavorites] = await Promise.all([
+        const [storedThemePreference, storedFavorites, storedScheduleTermDates] = await Promise.all([
           Storage.getItem(THEME_PREFERENCE_KEY),
           Storage.getItem(FAVORITES_KEY),
+          Storage.getItem(SCHEDULE_TERM_DATES_KEY),
         ]);
 
         if (!isMounted) {
@@ -55,10 +62,21 @@ export function AppPreferencesProvider({ children }: { children: ReactNode }) {
           const parsed = JSON.parse(storedFavorites) as FavoriteSchedule[];
           setFavorites(parsed);
         }
+
+        if (storedScheduleTermDates) {
+          const parsed = JSON.parse(storedScheduleTermDates) as Partial<{
+            endDate: string;
+            startDate: string;
+          }>;
+          setScheduleTermStartDate(typeof parsed.startDate === 'string' ? parsed.startDate : '');
+          setScheduleTermEndDate(typeof parsed.endDate === 'string' ? parsed.endDate : '');
+        }
       } catch {
         if (isMounted) {
           setFavorites([]);
           setThemePreferenceState('system');
+          setScheduleTermStartDate('');
+          setScheduleTermEndDate('');
         }
       }
     }
@@ -81,6 +99,19 @@ export function AppPreferencesProvider({ children }: { children: ReactNode }) {
   const setThemePreference = useCallback(async (value: ThemePreference) => {
     setThemePreferenceState(value);
     await Storage.setItem(THEME_PREFERENCE_KEY, value);
+  }, []);
+
+  const setScheduleTermDates = useCallback(async (startDate: string, endDate: string) => {
+    const normalizedStartDate = startDate.trim();
+    const normalizedEndDate = endDate.trim();
+
+    setScheduleTermStartDate(normalizedStartDate);
+    setScheduleTermEndDate(normalizedEndDate);
+
+    await Storage.setItem(
+      SCHEDULE_TERM_DATES_KEY,
+      JSON.stringify({ startDate: normalizedStartDate, endDate: normalizedEndDate })
+    );
   }, []);
 
   const removeFavorite = useCallback(async (scheduleId: string) => {
@@ -150,13 +181,29 @@ export function AppPreferencesProvider({ children }: { children: ReactNode }) {
       themePreference,
       setThemePreference,
       favorites,
+      scheduleTermEndDate,
+      scheduleTermStartDate,
+      setScheduleTermDates,
       toggleFavorite,
       removeFavorite,
       renameFavorite,
       moveFavorite,
       isFavorite,
     }),
-    [colorScheme, favorites, isFavorite, moveFavorite, removeFavorite, renameFavorite, setThemePreference, themePreference, toggleFavorite]
+    [
+      colorScheme,
+      favorites,
+      isFavorite,
+      moveFavorite,
+      removeFavorite,
+      renameFavorite,
+      scheduleTermEndDate,
+      scheduleTermStartDate,
+      setScheduleTermDates,
+      setThemePreference,
+      themePreference,
+      toggleFavorite,
+    ]
   );
 
   return <AppPreferencesContext.Provider value={value}>{children}</AppPreferencesContext.Provider>;
