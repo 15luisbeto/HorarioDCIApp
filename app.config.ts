@@ -1,7 +1,5 @@
 import type { ExpoConfig } from 'expo/config';
 
-import appJson from './app.json';
-
 declare const process: {
   env: Record<string, string | undefined>;
 };
@@ -13,18 +11,27 @@ const GOOGLE_CALENDAR_SCOPES = [
   'https://www.googleapis.com/auth/calendar.events',
 ] as const;
 
-const baseConfig = appJson.expo as ExpoConfig & {
-  extra?: Record<string, unknown>;
-};
-
 const config: ExpoConfig = {
-  ...baseConfig,
+  name: 'HorarioDCIApp',
+  slug: 'HorarioDCIApp',
+  version: '1.0.0',
+  orientation: 'portrait',
+  icon: './assets/images/icon.png',
+  scheme: 'com.luisbeto.horariodciapp',
+  userInterfaceStyle: 'automatic',
+  newArchEnabled: true,
   android: {
-    ...baseConfig.android,
+    adaptiveIcon: {
+      backgroundColor: '#E6F4FE',
+      foregroundImage: './assets/images/android-icon-foreground.png',
+      backgroundImage: './assets/images/android-icon-background.png',
+      monochromeImage: './assets/images/android-icon-monochrome.png',
+    },
+    edgeToEdgeEnabled: true,
     package: 'com.luisbeto.horariodciapp',
+    predictiveBackGestureEnabled: false,
   },
   extra: {
-    ...baseConfig.extra,
     eas: {
       projectId: '24ad306c-b677-45e2-8607-bd18334f68fe',
     },
@@ -37,9 +44,33 @@ const config: ExpoConfig = {
       webClientId: process.env.EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID ?? '',
     },
   },
+  experiments: {
+    typedRoutes: true,
+    reactCompiler: true,
+  },
   ios: {
-    ...baseConfig.ios,
     bundleIdentifier: 'com.luisbeto.horariodciapp',
+    supportsTablet: true,
+  },
+  plugins: [
+    'expo-router',
+    'expo-sqlite',
+    [
+      'expo-splash-screen',
+      {
+        image: './assets/images/splash-icon.png',
+        imageWidth: 200,
+        resizeMode: 'contain',
+        backgroundColor: '#ffffff',
+        dark: {
+          backgroundColor: '#000000',
+        },
+      },
+    ],
+  ],
+  web: {
+    output: 'static',
+    favicon: './assets/images/favicon.png',
   },
 };
 
