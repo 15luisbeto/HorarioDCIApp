@@ -1,0 +1,5152 @@
+{
+  "period": "Enero-Junio 2026",
+  "updated_at": "2026-03-20",
+  "source_pages": [
+    {
+      "letter_range": "A-E",
+      "url": "https://www.ugto.mx/campusleon/dci/estudiantes/mcursos/horarios-licenciatura/53-inscripciones/594-udaslestrasa-f",
+      "updated_at": "2026-01-30"
+    },
+    {
+      "letter_range": "F-L",
+      "url": "https://www.ugto.mx/campusleon/dci/estudiantes/mcursos/horarios-licenciatura/53-inscripciones/595-udaslestrasf-l",
+      "updated_at": "2026-02-05"
+    },
+    {
+      "letter_range": "M-Z",
+      "url": "https://www.ugto.mx/campusleon/dci/estudiantes/mcursos/horarios-licenciatura/53-inscripciones/602-uda-s-letras-m-z",
+      "updated_at": "2026-03-20"
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "name": "ADMINISTRACIÓN Y MANEJO DE PERSONAL",
+      "group": "A",
+      "teachers": [
+        "ALDELMO EMMANUEL ISRAEL REYES PABLO"
+      ],
+      "sessions": [
+        {
+          "day": "SABADO",
+          "start": "09:00",
+          "end": "12:00",
+          "room": "F1"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 2,
+      "name": "ÁLGEBRA LINEAL",
+      "group": "A",
+      "teachers": [
+        "JOSÉ LUIS LÓPEZ PICÓN"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "G1"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "G1"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 3,
+      "name": "ÁLGEBRA LINEAL",
+      "group": "B",
+      "teachers": [
+        "JOSÉ ALFREDO SOTO ÁLVAREZ"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F1"
+        },
+        {
+          "day": "VIERNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F1"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 4,
+      "name": "ÁLGEBRA LINEAL",
+      "group": "C",
+      "teachers": [
+        "OCTAVIO JOSÉ OBREGÓN DÍAZ"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "G1"
+        },
+        {
+          "day": "JUEVES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "G1"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 5,
+      "name": "ÁLGEBRA LINEAL",
+      "group": "D",
+      "teachers": [
+        "FRANCISCO MIGUEL VARGAS LUNA"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F6"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F6"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 6,
+      "name": "ANÁLISIS DE CIRCUITOS",
+      "group": "A",
+      "teachers": [
+        "ÉDGAR VALENCIA RODRÍGUEZ"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "LAB. DE ELECTRÓNICA, EDIF. G"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "14:00",
+          "room": "LAB. DE ELECTRÓNICA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 7,
+      "name": "ANÁLISIS DE CIRCUITOS",
+      "group": "B",
+      "teachers": [
+        "SVETLANA KASHINA"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "16:00",
+          "room": "LAB. DE ELECTRÓNICA, EDIF. D"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "LAB DE ELECTRÓNICA EDIF. D"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 8,
+      "name": "ANÁLISIS DE LA CULTURA MEXICANA",
+      "group": "A",
+      "teachers": [
+        "FERNANDO AGUAS ÁNGEL"
+      ],
+      "sessions": [
+        {
+          "day": "JUEVES",
+          "start": "16:00",
+          "end": "19:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 9,
+      "name": "ANÁLISIS TENSORIAL",
+      "group": "A",
+      "teachers": [
+        "AZARAEL ADONAY YEBRA PÉREZ"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "F2"
+        },
+        {
+          "day": "JUEVES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "F5"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 10,
+      "name": "ANÁLISIS VECTORIAL",
+      "group": "A",
+      "teachers": [
+        "JOSÉ LUIS LÓPEZ PICÓN"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F2"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F5"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 11,
+      "name": "ANÁLISIS VECTORIAL",
+      "group": "B",
+      "teachers": [
+        "JUAN BARRANCO MONARCA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "C3"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F8"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 12,
+      "name": "ANATOMÍA Y FISIOLOGÍA I",
+      "group": "A",
+      "teachers": [
+        "JOSÉ FIDEL BAIZABAL CARVALLO"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "C2"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "C2"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 13,
+      "name": "ANATOMÍA Y FISIOLOGÍA I",
+      "group": "B",
+      "teachers": [
+        "MARÍA RAQUEL HUERTA FRANCO"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "C3"
+        },
+        {
+          "day": "JUEVES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "C3"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 14,
+      "name": "ANATOMÍA Y FISIOLOGÍA II",
+      "group": "A",
+      "teachers": [
+        "VÍCTOR HUGO HERNÁNDEZ GONZÁLEZ"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "C2"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "C2"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 15,
+      "name": "ARQUITECTURA DE MICROCONTROLADORES",
+      "group": "A",
+      "teachers": [
+        "MIGUEL ÁNGEL MANCILLA MORELOS"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "16:00",
+          "room": "LAB. DE ELECTRÓNICA, EDIF. D"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "LAB. DE ELECTRÓNICA, EDIF. D"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 16,
+      "name": "ARQUITECTURA DE MICROCONTROLADORES",
+      "group": "B",
+      "teachers": [
+        "EDUARDO MONTES RAMÍREZ"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "14:00",
+          "room": "LAB. DE ELECTRÓNICA, EDIF.D"
+        },
+        {
+          "day": "VIERNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "LAB. DE ELECTRÓNICA, EDIF. D"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 17,
+      "name": "ASPECTOS BÁSICOS DEL PROCESO DEL CURTIDO",
+      "group": "A",
+      "teachers": [
+        "JUAN FRANCISCO RAYAS ROJAS"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "16:00",
+          "end": "18:00",
+          "room": "LAB. DE CURTIDURÍA"
+        },
+        {
+          "day": "SABADO",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "LAB. DE CURTIDURÍA"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 18,
+      "name": "BALANCE DE MATERIA Y ENERGÍA",
+      "group": "A",
+      "teachers": [
+        "JOSÉ ANTONIO REYES AGUILERA"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F8"
+        },
+        {
+          "day": "JUEVES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F8"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 19,
+      "name": "BIOESTADÍSTICA",
+      "group": "A",
+      "teachers": [
+        "TEODORO CÓRDOVA FRAGA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "C2"
+        },
+        {
+          "day": "JUEVES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "C2"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 20,
+      "name": "BIOFÍSICA MÉDICA",
+      "group": "A",
+      "teachers": [
+        "MODESTO ANTONIO SOSA AQUINO",
+        "VÍCTOR HUGO HERNÁNDEZ GONZÁLEZ"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "C2"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "C2"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 21,
+      "name": "BIOLOGÍA CELULAR",
+      "group": "A-I",
+      "teachers": [
+        "GUSTAVO BASURTO ISLAS",
+        "SILVIA ALEJANDRA LÓPEZ JUÁREZ"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "AUDITORIO DEL EDIF, G"
+        },
+        {
+          "day": "JUEVES",
+          "start": "09:00",
+          "end": "10:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "13:00",
+          "room": "LAB. DE BIOLOGÍA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 22,
+      "name": "BIOLOGÍA CELULAR",
+      "group": "A-II",
+      "teachers": [
+        "GUSTAVO BASURTO ISLAS"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "AUDITORIO DEL EDIF, G"
+        },
+        {
+          "day": "JUEVES",
+          "start": "09:00",
+          "end": "10:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        },
+        {
+          "day": "VIERNES",
+          "start": "12:00",
+          "end": "15:00",
+          "room": "LAB. DE BIOLOGÍA EDIF. G"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 23,
+      "name": "BIOLOGÍA CELULAR",
+      "group": "A-III",
+      "teachers": [
+        "GUSTAVO BASURTO ISLAS",
+        "SILVIA MARGARITA ÁVILA FLORES"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "AUDITORIO DEL EDIF, G"
+        },
+        {
+          "day": "JUEVES",
+          "start": "09:00",
+          "end": "10:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "13:00",
+          "end": "16:00",
+          "room": "LAB. DE BIOLOGÍA EDIF. G"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 24,
+      "name": "BIOMECÁNICA",
+      "group": "A-I",
+      "teachers": [
+        "ARTURO VEGA GONZÁLEZ"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "12:00",
+          "end": "16:00",
+          "room": "LAB. DE TECNOLOGÍA E INNOVACIÓN HOSPITALARIA"
+        },
+        {
+          "day": "VIERNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "C2"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 25,
+      "name": "BIOMECÁNICA",
+      "group": "A-II",
+      "teachers": [
+        "ARTURO VEGA GONZÁLEZ"
+      ],
+      "sessions": [
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "16:00",
+          "room": "AB. DE TECNOLOGÍA E INNOVACIÓN HOSPITALARIA"
+        },
+        {
+          "day": "VIERNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "C2"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 26,
+      "name": "BIOQUÍMICA",
+      "group": "A-I",
+      "teachers": [
+        "LAURA EDITH CASTELLANO TORRES"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "11:00",
+          "end": "12:00",
+          "room": "F8"
+        },
+        {
+          "day": "MARTES",
+          "start": "08:00",
+          "end": "09:00",
+          "room": "F5"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "11:00",
+          "end": "12:00",
+          "room": "F2"
+        },
+        {
+          "day": "MARTES",
+          "start": "09:00",
+          "end": "12:00",
+          "room": "LAB. DE BIOLOGÍA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 27,
+      "name": "BIOQUÍMICA",
+      "group": "A-II",
+      "teachers": [
+        "LAURA EDITH CASTELLANO TORRES",
+        "ANDREA CEJA FERNÁNDEZ"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "11:00",
+          "end": "12:00",
+          "room": "F8"
+        },
+        {
+          "day": "MARTES",
+          "start": "08:00",
+          "end": "09:00",
+          "room": "F5"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "11:00",
+          "end": "12:00",
+          "room": "F2"
+        },
+        {
+          "day": "LUNES",
+          "start": "08:00",
+          "end": "11:00",
+          "room": "LAB. DE BIOLOGÍA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 28,
+      "name": "BIOSEGURIDAD",
+      "group": "A",
+      "teachers": [
+        "ARGELIA ROSILLO DE LA TORRE"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F8"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F8"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 29,
+      "name": "BIOTECNOLOGÍA",
+      "group": "A-I",
+      "teachers": [
+        "SILVIA ALEJANDRA LÓPEZ JUÁREZ",
+        "GUSTAVO BASURTO ISLAS"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "13:00",
+          "end": "16:00",
+          "room": "LAB. DE BIOLOGÍA, EDIF. G"
+        },
+        {
+          "day": "MARTES",
+          "start": "16:00",
+          "end": "19:00",
+          "room": "G1"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 30,
+      "name": "BIOTECNOLOGÍA",
+      "group": "A-II",
+      "teachers": [
+        "SILVIA ALEJANDRA LÓPEZ JUÁREZ",
+        "SILVIA MARGARITA ÁVILA FLORES"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "16:00",
+          "end": "19:00",
+          "room": "G1"
+        },
+        {
+          "day": "JUEVES",
+          "start": "13:00",
+          "end": "16:00",
+          "room": "LAB. DE BIOLOGÍA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 31,
+      "name": "CÁLCULO DE VARIAS VARIABLES",
+      "group": "A",
+      "teachers": [
+        "EDITH NADIR DE JESÚS GONZÁLEZ"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F2"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F2"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 32,
+      "name": "CÁLCULO DE VARIAS VARIABLES",
+      "group": "B",
+      "teachers": [
+        "AZARAEL ADONAY YEBRA PÉREZ"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F7"
+        },
+        {
+          "day": "VIERNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F2"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 33,
+      "name": "CÁLCULO DE VARIAS VARIABLES",
+      "group": "C",
+      "teachers": [
+        "KARIM GIBRÁN HERNÁNDEZ CHAHIN"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F7"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F7"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 34,
+      "name": "CÁLCULO DIFERENCIAL",
+      "group": "A",
+      "teachers": [
+        "FRANCISCO SASTRE CARMONA"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F5"
+        },
+        {
+          "day": "VIERNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F5"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 35,
+      "name": "CÁLCULO DIFERENCIAL",
+      "group": "B",
+      "teachers": [
+        "MIGUEL ÁNGEL VALLEJO HERNÁNDEZ"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 36,
+      "name": "CÁLCULO DIFERENCIAL",
+      "group": "C",
+      "teachers": [
+        "LORENA BERENICE VELÁZQUEZ IBARRA"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F6"
+        },
+        {
+          "day": "JUEVES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F9"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 37,
+      "name": "CÁLCULO DIFERENCIAL",
+      "group": "D",
+      "teachers": [
+        "LUIS ARTURO UREÑA LÓPEZ"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F6"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F6"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 38,
+      "name": "CÁLCULO INTEGRAL",
+      "group": "A",
+      "teachers": [
+        "FRANCISCO SASTRE CARMONA"
+      ],
+      "sessions": [
+        {
+          "day": "JUEVES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F6"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F6"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 39,
+      "name": "CÁLCULO INTEGRAL",
+      "group": "B",
+      "teachers": [
+        "ÓSCAR LÓPEZ AGUAYO"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F5"
+        },
+        {
+          "day": "JUEVES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F7"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 40,
+      "name": "CÁLCULO INTEGRAL",
+      "group": "C",
+      "teachers": [
+        "ANTONIO DE JESÚS MOCTEZUMA CASTILLO"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F1"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F2"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 41,
+      "name": "CÁLCULO INTEGRAL",
+      "group": "D",
+      "teachers": [
+        "GEORFREY HUMBERTO ISRAEL MAURY CUNA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F5"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F5"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 42,
+      "name": "CÁLCULO INTEGRAL",
+      "group": "E",
+      "teachers": [
+        "GERARDO TOSCANO ALANIZ"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F7"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F2"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 43,
+      "name": "CINÉTICA QUÍMICA Y CATÁLISIS",
+      "group": "A-I",
+      "teachers": [
+        "LEONARDO ÁLVAREZ VALTIERRA"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "C2"
+        },
+        {
+          "day": "VIERNES",
+          "start": "12:00",
+          "end": "13:00",
+          "room": "F8"
+        },
+        {
+          "day": "MARTES",
+          "start": "09:00",
+          "end": "12:00",
+          "room": "LAB. DE QUÍMICA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 44,
+      "name": "COSMOLOGÍA",
+      "group": "A",
+      "teachers": [
+        "ALMA XÓCHITL GONZÁLEZ MORALES"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "F1"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "F1"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 45,
+      "name": "DEBATES ÉTICOS CONTEMPORÁNEOS Y DERECHOS HUMANOS",
+      "group": "A",
+      "teachers": [
+        "FERNANDO AGUAS ÁNGEL"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "16:00",
+          "end": "19:00",
+          "room": "G1"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 46,
+      "name": "DESARROLLO HISTÓRICO DE LA FÍSICA MODERNA",
+      "group": "A",
+      "teachers": [
+        "RAMÓN CASTAÑEDA PRIEGO"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "10:00",
+          "end": "11:00",
+          "room": "C3"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "C3"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 47,
+      "name": "DISEÑO DE PROCESOS",
+      "group": "A",
+      "teachers": [
+        "CARLOS EDUARDO MOLINA GUERRERO"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "CENTRO DE CÓMPUTO 1"
+        },
+        {
+          "day": "VIERNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "CENTRO DE CÓMPUTO 1"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 48,
+      "name": "ECUACIONES DIFERENCIALES ORDINARIAS",
+      "group": "A",
+      "teachers": [
+        "MODESTO ANTONIO SOSA AQUINO"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F1"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 49,
+      "name": "ECUACIONES DIFERENCIALES ORDINARIAS",
+      "group": "B",
+      "teachers": [
+        "TEODORO CÓRDOVA FRAGA"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F9"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F9"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 50,
+      "name": "ECUACIONES DIFERENCIALES PARCIALES",
+      "group": "A",
+      "teachers": [
+        "JUAN BARRANCO MONARCA"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F7"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F7"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 51,
+      "name": "ELECTRICIDAD Y MAGNETISMO",
+      "group": "A-I",
+      "teachers": [
+        "JUAN LUIS PÉREZ PÉREZ",
+        "JOSÉ SOCORRO GARCÍA DÍAZ"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "G1"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "G1"
+        },
+        {
+          "day": "MARTES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "LAB. DE FÍSICA MODERNA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 52,
+      "name": "ELECTRICIDAD Y MAGNETISMO",
+      "group": "A-VI",
+      "teachers": [
+        "JUAN LUIS PÉREZ PÉREZ",
+        "JOSÉ SOCORRO GARCÍA DÍAZ"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "G1"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "G1"
+        },
+        {
+          "day": "JUEVES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "LAB. DE FÍSICA MODERNA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 53,
+      "name": "ELECTRICIDAD Y MAGNETISMO",
+      "group": "A-VII",
+      "teachers": [
+        "JUAN LUIS PÉREZ PÉREZ",
+        "LENIN FRANCISCO ESCAMILLA HERRERA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "G1"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "G1"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "LAB. DE FÍSICA MODERNA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 54,
+      "name": "ELECTRICIDAD Y MAGNETISMO",
+      "group": "B-I",
+      "teachers": [
+        "JULIÁN FÉLIX VALDEZ",
+        "JOSÉ SOCORRO GARCÍA DÍAZ"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F9"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F9"
+        },
+        {
+          "day": "MARTES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "LAB. DE FÍSICA MODERNA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 55,
+      "name": "ELECTRICIDAD Y MAGNETISMO",
+      "group": "B-II",
+      "teachers": [
+        "JULIÁN FÉLIX VALDEZ"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F9"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F9"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "LAB. DE FÍSICA MODERNA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 56,
+      "name": "ELECTRICIDAD Y MAGNETISMO",
+      "group": "B-III",
+      "teachers": [
+        "JULIÁN FÉLIX VALDEZ",
+        "TATIANA IVANOVA ROMÁN VALENZUELA"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F9"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F9"
+        },
+        {
+          "day": "VIERNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "LAB. DE FÍSICA MODERNA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 57,
+      "name": "ELECTRICIDAD Y MAGNETISMO",
+      "group": "B-V",
+      "teachers": [
+        "JULIÁN FÉLIX VALDEZ"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F9"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F9"
+        },
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "LAB. DE FÍSICA MODERNA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 58,
+      "name": "ELECTRICIDAD Y MAGNETISMO",
+      "group": "C-II",
+      "teachers": [
+        "MANUEL MARTÍNEZ JIMÉNEZ",
+        "JULIÁN FÉLIX VALDEZ"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "G1"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "G1"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "LAB. DE FÍSICA MODERNA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 59,
+      "name": "ELECTRICIDAD Y MAGNETISMO",
+      "group": "C-III",
+      "teachers": [
+        "MANUEL MARTÍNEZ JIMÉNEZ",
+        "TATIANA IVANOVA ROMÁN VALENZUELA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "G1"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "G1"
+        },
+        {
+          "day": "VIERNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "LAB. DE FÍSICA MODERNA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 60,
+      "name": "ELECTRICIDAD Y MAGNETISMO",
+      "group": "C-IV",
+      "teachers": [
+        "MANUEL MARTÍNEZ JIMÉNEZ",
+        "JULIÁN FÉLIX VALDEZ"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "G1"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "G1"
+        },
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "LAB. DE FÍSICA MODERNA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 61,
+      "name": "ELECTRICIDAD Y MAGNETISMO",
+      "group": "D-III",
+      "teachers": [
+        "JOSÉ DE JESÚS BERNAL ALVARADO",
+        "TATIANA IVANOVA ROMÁN VALENZUELA"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "F9"
+        },
+        {
+          "day": "JUEVES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "F9"
+        },
+        {
+          "day": "VIERNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "LAB. DE FÍSICA MODERNA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 62,
+      "name": "ELECTRICIDAD Y MAGNETISMO",
+      "group": "D-V",
+      "teachers": [
+        "JOSÉ DE JESÚS BERNAL ALVARADO",
+        "JULIÁN FÉLIX VALDEZ"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "F9"
+        },
+        {
+          "day": "JUEVES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "F9"
+        },
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "LAB. DE FÍSICA MODERNA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 63,
+      "name": "ELECTRICIDAD Y MAGNETISMO",
+      "group": "D-VI",
+      "teachers": [
+        "JOSÉ DE JESÚS BERNAL ALVARADO",
+        "JOSÉ SOCORRO GARCÍA DÍAZ"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "F9"
+        },
+        {
+          "day": "JUEVES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "F9"
+        },
+        {
+          "day": "JUEVES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "LAB. DE FÍSICA MODERNA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 64,
+      "name": "ELECTROMAGNETISMO",
+      "group": "A",
+      "teachers": [
+        "JOSÉ LUIS LUCIO MARTÍNEZ"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F7"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F7"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 65,
+      "name": "ESTADÍSTICA AVANZADA",
+      "group": "A",
+      "teachers": [
+        "ENRIQUE VERA ROMERO"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "F2"
+        },
+        {
+          "day": "JUEVES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "F2"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 66,
+      "name": "ESTRUCTURA DE LA MATERIA",
+      "group": "A",
+      "teachers": [
+        "JOSÉ JORGE DELGADO GARCÍA"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "C3"
+        },
+        {
+          "day": "JUEVES",
+          "start": "09:00",
+          "end": "10:00",
+          "room": "C3"
+        }
+      ],
+      "source_letter_range": "A-E"
+    },
+    {
+      "id": 67,
+      "name": "FENÓMENOS DE TRANSPORTE",
+      "group": "A",
+      "teachers": [
+        "SANTIAGO GUTIÉRREZ VARGAS"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F6"
+        },
+        {
+          "day": "VIERNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "C3"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 68,
+      "name": "FÍSICA CUÁNTICA",
+      "group": "A-I",
+      "teachers": [
+        "ALEJANDRO GIL-VILLEGAS MONTIEL"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "C3"
+        },
+        {
+          "day": "VIERNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F9"
+        },
+        {
+          "day": "MARTES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "LAB. DE FÍSICA MODERNA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 69,
+      "name": "FÍSICA CUÁNTICA",
+      "group": "A-II",
+      "teachers": [
+        "ALEJANDRO GIL-VILLEGAS MONTIEL"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "C3"
+        },
+        {
+          "day": "VIERNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F9"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "LAB. DE FÍSICA MODERNA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 70,
+      "name": "FÍSICA DE LÁSERES",
+      "group": "A",
+      "teachers": [
+        "RIGOBERTO CASTRO BELTRÁN"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "17:00",
+          "end": "19:00",
+          "room": "C3"
+        },
+        {
+          "day": "JUEVES",
+          "start": "17:00",
+          "end": "19:00",
+          "room": "C3"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 71,
+      "name": "FÍSICA DEL ESTADO SÓLIDO",
+      "group": "A",
+      "teachers": [
+        "LUIS ARMANDO DÍAZ TORRES"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "CIO: AUDITORIO ACADÉMICO EDIFICIO D"
+        },
+        {
+          "day": "JUEVES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "CIO: AUDITORIO ACADÉMICO EDIFICIO D"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 72,
+      "name": "FÍSICA GENERAL",
+      "group": "A-I",
+      "teachers": [
+        "FRANCISCO ALARCÓN OSEGUERA",
+        "GERARDO GUTIÉRREZ JUÁREZ"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F1"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F1"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "LAB. DE FÍSICA CLÁSICA, EDIF. C"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 73,
+      "name": "FÍSICA GENERAL",
+      "group": "A-II",
+      "teachers": [
+        "FRANCISCO ALARCÓN OSEGUERA",
+        "JOSÉ SOCORRO GARCÍA DÍAZ"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F1"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F1"
+        },
+        {
+          "day": "VIERNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "LAB. DE FÍSICA CLÁSICA, EDIF. C"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 74,
+      "name": "FÍSICA GENERAL",
+      "group": "B-II",
+      "teachers": [
+        "JOSÉ DE JESÚS BERNAL ALVARADO",
+        "JOSÉ SOCORRO GARCÍA DÍAZ"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        },
+        {
+          "day": "VIERNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "LAB. DE FÍSICA CLÁSICA, EDIF. C"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 75,
+      "name": "FÍSICA GENERAL",
+      "group": "B-III",
+      "teachers": [
+        "JOSÉ DE JESÚS BERNAL ALVARADO",
+        "GERARDO GUTIÉRREZ JUÁREZ"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        },
+        {
+          "day": "VIERNES",
+          "start": "13:00",
+          "end": "15:00",
+          "room": "LAB. DE FÍSICA CLÁSICA, EDIF. C"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 76,
+      "name": "FÍSICA GENERAL",
+      "group": "C-I",
+      "teachers": [
+        "GERARDO GUTIÉRREZ JUÁREZ"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F2"
+        },
+        {
+          "day": "JUEVES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F2"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "LAB. DE FÍSICA CLÁSICA, EDIF. C"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 77,
+      "name": "FÍSICA GENERAL",
+      "group": "C-II",
+      "teachers": [
+        "GERARDO GUTIÉRREZ JUÁREZ",
+        "JOSÉ SOCORRO GARCÍA DÍAZ"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F2"
+        },
+        {
+          "day": "JUEVES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F2"
+        },
+        {
+          "day": "VIERNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "LAB. DE FÍSICA CLÁSICA, EDIF. C"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 78,
+      "name": "FÍSICA RELATIVISTA",
+      "group": "A",
+      "teachers": [
+        "FRANCISCO XAVIER LINARES CEDEÑO"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F5"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F9"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 79,
+      "name": "FLUIDOS, ONDAS Y TEMPERATURA",
+      "group": "A-II",
+      "teachers": [
+        "MA. ISABEL DELGADILLO CANO",
+        "NATALIA RINCÓN LONDOÑO"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F6"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F6"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "LAB. DE TERMODINÁMICA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 80,
+      "name": "FLUIDOS, ONDAS Y TEMPERATURA",
+      "group": "A-V",
+      "teachers": [
+        "MA. ISABEL DELGADILLO CANO",
+        "GEORFREY HUMBERTO ISRAEL MAURY CUNA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F6"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F6"
+        },
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "LAB. DE TERMODINÁMICA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 81,
+      "name": "FLUIDOS, ONDAS Y TEMPERATURA",
+      "group": "B-III",
+      "teachers": [
+        "MA. ISABEL DELGADILLO CANO",
+        "JOSÉ MIGUEL RAMOS MORENO"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F8"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F8"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "LAB. DE TERMODINÁMICA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 82,
+      "name": "FLUIDOS, ONDAS Y TEMPERATURA",
+      "group": "B-IV",
+      "teachers": [
+        "MA. ISABEL DELGADILLO CANO",
+        "JOSÉ MIGUEL RAMOS MORENO"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F8"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F8"
+        },
+        {
+          "day": "JUEVES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "LAB. DE TERMODINÁMICA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 83,
+      "name": "FLUIDOS, ONDAS Y TEMPERATURA",
+      "group": "C-I",
+      "teachers": [
+        "GEORFREY HUMBERTO ISRAEL MAURY CUNA",
+        "CÉSAR SERNA HERNÁNDEZ"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F9"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F9"
+        },
+        {
+          "day": "VIERNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "LAB, DE TERMODINÁMICA, EDIG. G"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 84,
+      "name": "FLUIDOS, ONDAS Y TEMPERATURA",
+      "group": "C-VI",
+      "teachers": [
+        "GEORFREY HUMBERTO ISRAEL MAURY CUNA",
+        "ENRIQUE VERA ROMERO"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F9"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F9"
+        },
+        {
+          "day": "MARTES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "LAB. DE TERMODINÁMICA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 85,
+      "name": "FRANCÉS I",
+      "group": "A",
+      "teachers": [
+        "CÉLIA BEAUTEMPS"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "AULA B1 SEDE CAMPESTRE II"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "12:00",
+          "end": "13:00",
+          "room": "AULA B1 SEDE CAMPESTRE II"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 86,
+      "name": "FRANCÉS I",
+      "group": "B",
+      "teachers": [
+        "CÉLIA BEAUTEMPS"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "AULA B1 SEDE CAMPESTRE II"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "13:00",
+          "room": "AULA B1 SEDE CAMPESTRE II"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 87,
+      "name": "FRANCÉS I",
+      "group": "C",
+      "teachers": [
+        "CÉLIA BEAUTEMPS"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "14:00",
+          "end": "16:00",
+          "room": "AULA B1 SEDE CAMPESTRE II"
+        },
+        {
+          "day": "MARTES",
+          "start": "14:00",
+          "end": "15:00",
+          "room": "AULA B1 SEDE CAMPESTRE II"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 88,
+      "name": "FRANCÉS II",
+      "group": "A",
+      "teachers": [
+        "CÉLIA BEAUTEMPS"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "14:00",
+          "end": "15:30",
+          "room": "AULA B1 SEDE CAMPESTRE II"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "14:00",
+          "end": "15:30",
+          "room": "AULA B1 SEDE CAMPESTRE II"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 89,
+      "name": "FRANCÉS II",
+      "group": "B",
+      "teachers": [
+        "CÉLIA BEAUTEMPS"
+      ],
+      "sessions": [
+        {
+          "day": "JUEVES",
+          "start": "15:00",
+          "end": "18:00",
+          "room": "AULA B1 SEDE CAMPESTRE II"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 90,
+      "name": "FUNCIONES ESPECIALES",
+      "group": "A",
+      "teachers": [
+        "AZARAEL ADONAY YEBRA PÉREZ"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F9"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F8"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 91,
+      "name": "FUNDAMENTOS DE PROCESAMIENTO DIGITAL DE IMÁGENES",
+      "group": "A",
+      "teachers": [
+        "JUAN DE DIOS ORTIZ ALVARADO"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "CENTRO DE CÓMPUTO 2"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "CENTRO DE CÓMPUTO 2"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 92,
+      "name": "FUNDAMENTOS DE PROCESAMIENTO DIGITAL DE SEÑALES",
+      "group": "A",
+      "teachers": [
+        "LUIS MARTÍN GONZÁLEZ VIDAL"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "CENTRO DE CÓMPUTO 2"
+        },
+        {
+          "day": "VIERNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "CENTRO DE CÓMPUTO 2"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 93,
+      "name": "FUNDAMENTOS DE PROCESAMIENTO DIGITAL DE SEÑALES",
+      "group": "B",
+      "teachers": [
+        "ARTURO GONZÁLEZ VEGA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "CENTRO DE CÓMPUTO 1"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "CENTRO DE CÓMPUTO 1"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 94,
+      "name": "FUNDAMENTOS FILOSÓFICO-EPISTEMOLÓGICOS",
+      "group": "A",
+      "teachers": [
+        "JOSÉ GUSTAVO SÁMANO DÁVILA"
+      ],
+      "sessions": [
+        {
+          "day": "VIERNES",
+          "start": "15:00",
+          "end": "18:00",
+          "room": "G1"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 95,
+      "name": "GEOMETRÍA DIFERENCIAL",
+      "group": "A",
+      "teachers": [
+        "DAVID YVES GHISLAIN DELEPINE"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "17:00",
+          "end": "19:00",
+          "room": "F1"
+        },
+        {
+          "day": "JUEVES",
+          "start": "17:00",
+          "end": "19:00",
+          "room": "F1"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 96,
+      "name": "HERRAMIENTAS INFORMÁTICAS Y GESTIÓN DE LA INFORMACIÓN",
+      "group": "A",
+      "teachers": [
+        "MANUEL IVÁN LEÓN MADRID"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "15:00",
+          "room": "CENTRO DE CÓMPUTO 2"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 97,
+      "name": "INGENIERÍA AMBIENTAL DE LA ATMÓSFERA",
+      "group": "A",
+      "teachers": [
+        "ÉDGAR VÁZQUEZ NÚÑEZ"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "17:00",
+          "end": "19:00",
+          "room": "F5"
+        },
+        {
+          "day": "JUEVES",
+          "start": "17:00",
+          "end": "19:00",
+          "room": "F5"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 98,
+      "name": "INGENIERÍA CLÍNICA",
+      "group": "A",
+      "teachers": [
+        "ÉDGAR GONZÁLEZ CAMPOS"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "17:00",
+          "end": "19:00",
+          "room": "LAB. DE TECNOLOGÍA E INNOVACIÓN HOSPITALARIA"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "17:00",
+          "end": "19:00",
+          "room": "LAB. DE TECNOLOGÍA E INNOVACIÓN HOSPITALARIA"
+        },
+        {
+          "day": "VIERNES",
+          "start": "17:00",
+          "end": "19:00",
+          "room": "LAB. DE TECNOLOGÍA E INNOVACIÓN HOSPITALARIA"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 99,
+      "name": "INGENIERÍA DE CALOR",
+      "group": "A",
+      "teachers": [
+        "SANTIAGO GUTIÉRREZ VARGAS"
+      ],
+      "sessions": [
+        {
+          "day": "SABADO",
+          "start": "09:00",
+          "end": "13:00",
+          "room": "F7"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 100,
+      "name": "INGENIERÍA DE CONTROL",
+      "group": "A",
+      "teachers": [
+        "HUETZIN AARÓN PÉREZ OLIVAS"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "LAB. DE ELECTRÓNICA, EDIF. G"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "16:00",
+          "room": "LA. DE ELECTRÓNICA, EDIF. D"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 101,
+      "name": "INGENIERÍA DE CONTROL",
+      "group": "B",
+      "teachers": [
+        "HUETZIN AARÓN PÉREZ OLIVAS"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "08:00",
+          "end": "12:00",
+          "room": "LAB. DE ELECTRÓNICA, EDIF. G"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "LAB. DE ELECTRÓNICA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 102,
+      "name": "INGENIERÍA DE CONTROL DE PROCESOS",
+      "group": "A",
+      "teachers": [
+        "JORGE ADRIÁN BOTELLO RUEDA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        },
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "G2"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 103,
+      "name": "INGENIERÍA DE FLUIDOS",
+      "group": "A",
+      "teachers": [
+        "IRAÍS AMARANTA QUINTERO ORTEGA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "G2"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "G2"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 104,
+      "name": "INGENIERÍA DE PROYECTOS",
+      "group": "A",
+      "teachers": [
+        "JORGE ADRIÁN BOTELLO RUEDA"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "17:00",
+          "end": "19:00",
+          "room": "CENTRO DE CÓMPUTO 2"
+        },
+        {
+          "day": "JUEVES",
+          "start": "17:00",
+          "end": "19:00",
+          "room": "CENTRO DE CÓMPUTO 2"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 105,
+      "name": "INGENIERÍA DE REACTORES HOMOGÉNEOS",
+      "group": "A",
+      "teachers": [
+        "JORGE ADRIÁN BOTELLO RUEDA"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "C2"
+        },
+        {
+          "day": "VIERNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "C2"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 106,
+      "name": "INGENIERÍA ECONÓMICA",
+      "group": "A",
+      "teachers": [
+        "JUAN FRANCISCO RAYAS ROJAS"
+      ],
+      "sessions": [
+        {
+          "day": "VIERNES",
+          "start": "12:00",
+          "end": "15:00",
+          "room": "F6"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 107,
+      "name": "INGENIERÍA EN REHABILITACIÓN",
+      "group": "A",
+      "teachers": [
+        "ARTURO VEGA GONZÁLEZ"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "09:00",
+          "end": "12:00",
+          "room": "LAB. DE TECNOLOGÍA E INNOVACIÓN HOSPITALARIA"
+        },
+        {
+          "day": "JUEVES",
+          "start": "09:00",
+          "end": "12:00",
+          "room": "LAB. DE TECNOLOGÍA E INNOVACIÓN HOSPITALARIA"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 108,
+      "name": "INGLÉS I",
+      "group": "A",
+      "teachers": [
+        "ÉDGAR ALEJANDRO RODRÍGUEZ RODRÍGUEZ"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "F8"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "F8"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 109,
+      "name": "INGLÉS I",
+      "group": "B",
+      "teachers": [
+        "JESÚS ALBERTO RINCÓN AGUILAR"
+      ],
+      "sessions": [
+        {
+          "day": "VIERNES",
+          "start": "15:00",
+          "end": "19:00",
+          "room": "F8"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 110,
+      "name": "INGLÉS I",
+      "group": "C",
+      "teachers": [
+        "BIELKA SÁNCHEZ BARRÓN"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "AULA A5 SEDE CAMPESTRE II"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "AULA A5 SEDE CAMPESTRE II"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 111,
+      "name": "INGLÉS I",
+      "group": "D",
+      "teachers": [
+        "JESÚS ALBERTO RINCÓN AGUILAR"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "16:00",
+          "end": "18:00",
+          "room": "AULA B2 SEDE CAMPESTRE II"
+        },
+        {
+          "day": "JUEVES",
+          "start": "16:00",
+          "end": "18:00",
+          "room": "AULA B2 SEDE CAMPESTRE II"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 112,
+      "name": "INGLÉS II",
+      "group": "A",
+      "teachers": [
+        "ÉDGAR ALEJANDRO RODRÍGUEZ RODRÍGUEZ"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "14:00",
+          "end": "16:00",
+          "room": "F8"
+        },
+        {
+          "day": "JUEVES",
+          "start": "14:00",
+          "end": "16:00",
+          "room": "F8"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 113,
+      "name": "INGLÉS II",
+      "group": "B",
+      "teachers": [
+        "ÉDGAR ALEJANDRO RODRÍGUEZ RODRÍGUEZ"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "16:00",
+          "end": "18:00",
+          "room": "F8"
+        },
+        {
+          "day": "JUEVES",
+          "start": "16:00",
+          "end": "18:00",
+          "room": "F8"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 114,
+      "name": "INGLÉS II",
+      "group": "C",
+      "teachers": [
+        "PRISCILA CAROLINA SILVA GUERRERO"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "AULA B3 SEDE CAMPESTRE II"
+        },
+        {
+          "day": "JUEVES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "AULA B3 SEDE CAMPESTRE II"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 115,
+      "name": "INGLÉS II",
+      "group": "D",
+      "teachers": [
+        "PRISCILA CAROLINA SILVA GUERRERO"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "AULA B3 SEDE CAMPESTRE II"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "AULA B3 SEDE CAMPESTRE II"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 116,
+      "name": "INGLÉS II",
+      "group": "E",
+      "teachers": [
+        "SILVIA BETHSABE BAUTISTA MENDOZA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "14:00",
+          "end": "16:00",
+          "room": "AULA F9"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "14:00",
+          "end": "16:00",
+          "room": "AULA F9"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 117,
+      "name": "INGLÉS III",
+      "group": "A",
+      "teachers": [
+        "SALVADOR RAMÍREZ ROMERO"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "14:00",
+          "end": "16:00",
+          "room": "F7"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "14:00",
+          "end": "16:00",
+          "room": "F7"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 118,
+      "name": "INGLÉS III",
+      "group": "B",
+      "teachers": [
+        "SALVADOR RAMÍREZ ROMERO"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "16:00",
+          "end": "18:00",
+          "room": "F7"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "16:00",
+          "end": "18:00",
+          "room": "F7"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 119,
+      "name": "INGLÉS III",
+      "group": "C",
+      "teachers": [
+        "SILVIA BETHSABE BAUTISTA MENDOZA"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "16:00",
+          "end": "18:00",
+          "room": "F7"
+        },
+        {
+          "day": "JUEVES",
+          "start": "16:00",
+          "end": "18:00",
+          "room": "F7"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 120,
+      "name": "INGLÉS III",
+      "group": "D",
+      "teachers": [
+        "JORGE PÉREZ BUSSO"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "AULA B2 SEDE CAMPESTRE II"
+        },
+        {
+          "day": "JUEVES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "AULA B1 SEDE CAMPESTRE II"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 121,
+      "name": "INGLÉS III",
+      "group": "E",
+      "teachers": [
+        "JORGE PÉREZ BUSSO"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "AULA B2 SEDE CAMPESTRE II"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "AULA B2 SEDE CAMPESTRE II"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 122,
+      "name": "INGLÉS III",
+      "group": "F",
+      "teachers": [
+        "SILVIA BETHSABE BAUTISTA MENDOZA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "16:00",
+          "end": "18:00",
+          "room": "AULA A5 SEDE CAMPESTRE II"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "16:00",
+          "end": "18:00",
+          "room": "AULA A5 SEDE CAMPESTRE II"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 123,
+      "name": "INGLÉS IV",
+      "group": "A",
+      "teachers": [
+        "SALVADOR RAMÍREZ ROMERO"
+      ],
+      "sessions": [
+        {
+          "day": "VIERNES",
+          "start": "14:00",
+          "end": "18:00",
+          "room": "F9"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 124,
+      "name": "INGLÉS IV",
+      "group": "B",
+      "teachers": [
+        "SILVIA BETHSABE BAUTISTA MENDOZA"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "14:00",
+          "end": "16:00",
+          "room": "F7"
+        },
+        {
+          "day": "JUEVES",
+          "start": "14:00",
+          "end": "16:00",
+          "room": "F7"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 125,
+      "name": "INGLÉS IV",
+      "group": "C",
+      "teachers": [
+        "BIELKA SÁNCHEZ BARRÓN"
+      ],
+      "sessions": [
+        {
+          "day": "VIERNES",
+          "start": "08:00",
+          "end": "12:00",
+          "room": "AULA A2 SEDE CAMPESTRE II"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 126,
+      "name": "INGLÉS IV",
+      "group": "D",
+      "teachers": [
+        "JESÚS ALBERTO RINCÓN AGUILAR"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "16:00",
+          "end": "18:00",
+          "room": "AULA B2 SEDE CAMPESTRE II"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "16:00",
+          "end": "18:00",
+          "room": "AULA B2 SEDE CAMPESTRE II"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 127,
+      "name": "INSTRUMENTACIÓN MÉDICA",
+      "group": "A",
+      "teachers": [
+        "SOLANGE IVETTE RIVERA MANRIQUE"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "15:00",
+          "room": "LAB. DE ELECTRÓNICA, EDIF. G"
+        },
+        {
+          "day": "VIERNES",
+          "start": "12:00",
+          "end": "15:00",
+          "room": "LAB. DE ELECTRÓNICA, EDIF. D"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 128,
+      "name": "INVESTIGACIÓN DE OPERACIONES",
+      "group": "A",
+      "teachers": [
+        "LUIS MARTÍN GONZÁLEZ VIDAL"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "C3"
+        },
+        {
+          "day": "VIERNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F7"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 129,
+      "name": "LABORATORIO DE ASTRONOMÍA",
+      "group": "A",
+      "teachers": [
+        "ALMA XÓCHITL GONZÁLES MORALES",
+        "PENDIENTE"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "17:00",
+          "end": "20:00",
+          "room": "AUDITORIO DEL EDIFICIO B"
+        },
+        {
+          "day": "VIERNES",
+          "start": "16:00",
+          "end": "17:00",
+          "room": "F1"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 130,
+      "name": "LABORATORIO DE FENÓMENOS DE TRANSPORTE",
+      "group": "A",
+      "teachers": [
+        "ÉDGAR VÁZQUEZ NÚÑEZ"
+      ],
+      "sessions": [
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "12:00",
+          "room": "LAB. DE IQ EDIF. G"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 131,
+      "name": "LABORATORIO DE PROCESOS DE SEPARACIÓN",
+      "group": "A",
+      "teachers": [
+        "SANTIAGO GUTIÉRREZ VARGAS"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "08:00",
+          "end": "12:00",
+          "room": "LAB. DE IQ. EDIF. G"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 132,
+      "name": "LABORATORIO DE REACTORES",
+      "group": "A",
+      "teachers": [
+        "IRAÍS AMARANTA QUINTERO ORTEGA"
+      ],
+      "sessions": [
+        {
+          "day": "VIERNES",
+          "start": "08:00",
+          "end": "11:00",
+          "room": "LAB. DE IQ, EDIF. G"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 133,
+      "name": "LABORATORIO DE SIMULACIÓN DE PROCESOS",
+      "group": "A",
+      "teachers": [
+        "JULIO CÉSAR ARMAS PÉREZ"
+      ],
+      "sessions": [
+        {
+          "day": "SABADO",
+          "start": "09:00",
+          "end": "12:00",
+          "room": "CENTRO DE CÓMPUTO 1"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 134,
+      "name": "LENGUA EXTRANJERA II (FRANCÉS III)",
+      "group": "A",
+      "teachers": [
+        "CÉLIA BEAUTEMPS"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "16:00",
+          "end": "18:00",
+          "room": "AULA A6 SEDE CAMPESTRE II"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "16:00",
+          "end": "18:00",
+          "room": "AULA A6 SEDE CAMPESTRE II"
+        }
+      ],
+      "source_letter_range": "F-L"
+    },
+    {
+      "id": 135,
+      "name": "MATEMÁTICAS SUPERIORES",
+      "group": "A",
+      "teachers": [
+        "JONATHAN ULISES ÁLVAREZ MARTÍNEZ"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F1"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F1"
+        },
+        {
+          "day": "VIERNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F1"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 136,
+      "name": "MATEMÁTICAS SUPERIORES",
+      "group": "B",
+      "teachers": [
+        "PABLO REYES HERNÁNDEZ"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F1"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F1"
+        },
+        {
+          "day": "JUEVES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F1"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 137,
+      "name": "MATEMÁTICAS SUPERIORES",
+      "group": "C",
+      "teachers": [
+        "CARSTEN HOLTFORT"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F2"
+        },
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F2"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F2"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 138,
+      "name": "MECÁNICA ANALÍTICA",
+      "group": "A",
+      "teachers": [
+        "MARCO ANTONIO REYES SANTOS"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F5"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F7"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 139,
+      "name": "MECÁNICA CLÁSICA",
+      "group": "A-I",
+      "teachers": [
+        "ALBERTO DÍEZ TEJEDOR",
+        "PAULINA ALICIA IRAÍS HERNÁNDEZ BECERRA"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F6"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F6"
+        },
+        {
+          "day": "LUNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "LAB. DE FÍSICA CLÁSICA, EDIF. C"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 140,
+      "name": "MECÁNICA CLÁSICA",
+      "group": "A-III",
+      "teachers": [
+        "ALBERTO DÍEZ TEJEDOR",
+        "PAULINA ALICIA IRAÍS HERNÁNDEZ BECERRA"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F6"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F6"
+        },
+        {
+          "day": "MARTES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "LAB. DE FÍSICA CLÁSICA, EDIF. C"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 141,
+      "name": "MECÁNICA CLÁSICA",
+      "group": "B-I",
+      "teachers": [
+        "ALBERTO SÁNCHEZ LUVIANO",
+        "PAULINA ALICIA IRAÍS HERNÁNDEZ BECERRA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F7"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F5"
+        },
+        {
+          "day": "LUNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "LAB. DE FÍSICA CLÁSICA, EDIF. C"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 142,
+      "name": "MECÁNICA CLÁSICA",
+      "group": "B-II",
+      "teachers": [
+        "ALBERTO SÁNCHEZ LUVIANO",
+        "TATIANA IVANOVA ROMAN VALENZUELA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F7"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F5"
+        },
+        {
+          "day": "LUNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "LAB. DE FÍSICA CLÁSICA, EDIF. C"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 143,
+      "name": "MECÁNICA CLÁSICA",
+      "group": "C-V",
+      "teachers": [
+        "NANA GERALDINE CABO BIZET",
+        "TATIANA IVANOVA ROMAN VALENZUELA"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "G1"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "C2"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "LAB. DE FÍSICA CLÁSICA, EDIF. C"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 144,
+      "name": "MECÁNICA CLÁSICA",
+      "group": "C-VI",
+      "teachers": [
+        "NANA GERALDINE CABO BIZET",
+        "SANDRA JUDITH CASTAÑEDA PALAFOX"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "G1"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "C2"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "LAB. DE FÍSICA CLÁSICA, EDIF. C"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 145,
+      "name": "MECÁNICA CLÁSICA",
+      "group": "D-IV",
+      "teachers": [
+        "WILFREDO YUPANQUI CARPIO",
+        "JOSÉ SOCORRO GARCÍA DÍAZ"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F5"
+        },
+        {
+          "day": "VIERNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F5"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "LAB. DE FÍSICA, EDIF. C"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 146,
+      "name": "MECÁNICA CUÁNTICA",
+      "group": "A",
+      "teachers": [
+        "OSCAR GERARDO LOAIZA BRITO"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F9"
+        },
+        {
+          "day": "VIERNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 147,
+      "name": "MECÁNICA CUÁNTICA",
+      "group": "B",
+      "teachers": [
+        "CARLOS HERMAN WIECHERS MEDINA"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F6"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F1"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 148,
+      "name": "MECÁNICA DE MEDIOS CONTINUOS",
+      "group": "A-I",
+      "teachers": [
+        "JOSÉ JORGE DELGADO GARCÍA"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "G1"
+        },
+        {
+          "day": "VIERNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "G1"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "LAB. DE QUÍMICA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 149,
+      "name": "MECÁNICA DE MEDIOS CONTINUOS",
+      "group": "A-II",
+      "teachers": [
+        "JOSÉ JORGE DELGADO GARCÍA"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "G1"
+        },
+        {
+          "day": "VIERNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "G1"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "LAB. DE QUÍMICA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 150,
+      "name": "MECÁNICA ESTADÍSTICA",
+      "group": "A",
+      "teachers": [
+        "NÉSTOR ENRIQUE VALADEZ PÉREZ"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F9"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F2"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 151,
+      "name": "MEDICIÓN E INSTRUMENTACIÓN",
+      "group": "A",
+      "teachers": [
+        "JABEL JIMÉNEZ RUVALCABA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "16:00",
+          "room": "LAB. DE ELECTRÓNICA, EDIF. G"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "LAB. DE ELECTRÓNICA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 152,
+      "name": "MEDICIÓN E INSTRUMENTACIÓN",
+      "group": "B",
+      "teachers": [
+        "JABEL JIMÉNEZ RUVALCABA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "LAB. DE ELECTRÓNICA, EDIF. G"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "14:00",
+          "room": "LAB. DE ELECTRÓNICA, EDIF G"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 153,
+      "name": "MÉTODOS NUMÉRICOS",
+      "group": "A",
+      "teachers": [
+        "NESTOR MANUEL DE LO SANTOS LÓPEZ"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "CENTRO DE CÓMPUTO 2"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "CENTRO DE CÓMPUTO 2"
+        },
+        {
+          "day": "JUEVES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "CENTRO DE CÓMPUTO 2"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 154,
+      "name": "NEUROFISIOLOGÍA",
+      "group": "A",
+      "teachers": [
+        "SERGIO EDUARDO SOLORIO MEZA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "C2"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "C2"
+        },
+        {
+          "day": "VIERNES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "C2"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 155,
+      "name": "ÓPTICA",
+      "group": "A-I",
+      "teachers": [
+        "RIGOBERTO CASTRO BELTRÁN",
+        "ERICK SARMIENTO GÓMEZ"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "C3"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "C3"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "LA. DE FÍSICA MODERNA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 156,
+      "name": "ÓPTICA",
+      "group": "A-II",
+      "teachers": [
+        "RIGOBERTO CASTRO BELTRÁN",
+        "ERICK SARMIENTO GÓMEZ"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "C3"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "C3"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "LAB. DE FÍSICA MODERNA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 157,
+      "name": "ÓPTICA NO-LINEAL",
+      "group": "A",
+      "teachers": [
+        "LORENA BERENICE VELÁZQUEZ IBARRA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "17:00",
+          "end": "19:00",
+          "room": "F1"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "17:00",
+          "end": "19:00",
+          "room": "F1"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 158,
+      "name": "OPTIMIZACIÓN Y SIMULACIÓN DE PROCESOS",
+      "group": "A",
+      "teachers": [
+        "JOSÉ DE JESÚS IBARRA SÁNCHEZ"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "17:00",
+          "end": "19:00",
+          "room": "CENTRO DE CÓMPUTO 2"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "17:00",
+          "end": "19:00",
+          "room": "CENTRO DE CÓMPUTO 2"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 159,
+      "name": "PRINCIPIOS DE OPERACIÓN DE EQUIPO MÉDICOS",
+      "group": "A",
+      "teachers": [
+        "JOSÉ GONZÁLEZ CRUZ"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "17:00",
+          "end": "19:00",
+          "room": "LAB. DE TECNOLOGÍA E INNOVACIÓN HOSPITALARIA (A)"
+        },
+        {
+          "day": "JUEVES",
+          "start": "17:00",
+          "end": "19:00",
+          "room": "LAB. DE TECNOLOGÍA E INNOVACIÓN HOSPITALARIA (A)"
+        },
+        {
+          "day": "VIERNES",
+          "start": "17:00",
+          "end": "19:00",
+          "room": "F1"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 160,
+      "name": "PROBABILIDAD Y ESTADÍSTICA",
+      "group": "A",
+      "teachers": [
+        "MIGUEL ÁNGEL VALLEJO HERNÁNDEZ"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F9"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 161,
+      "name": "PROBABILIDAD Y ESTADÍSTICA",
+      "group": "B",
+      "teachers": [
+        "FRANCISCO MIGUEL VARGAS LUNA"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F5"
+        },
+        {
+          "day": "JUEVES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F5"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 162,
+      "name": "PROBABILIDAD Y ESTADÍSTICA",
+      "group": "C",
+      "teachers": [
+        "MARIANA VILLAGÓMEZ MORA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 163,
+      "name": "PROBABILIDAD Y ESTADÍSTICA",
+      "group": "D",
+      "teachers": [
+        "LENIN FRANCISCO ESCAMILLA HERRERA"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F8"
+        },
+        {
+          "day": "VIERNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F2"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 164,
+      "name": "PROBLEMAS SOCIALES Y DEBATES CONTEMPORÁNEOS",
+      "group": "A",
+      "teachers": [
+        "FERNANDO AGUAS ÁNGEL"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "16:00",
+          "end": "19:00",
+          "room": "G1"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 165,
+      "name": "PROCESOS DE SEPARACIÓN",
+      "group": "A",
+      "teachers": [
+        "JULIO CÉSAR ARMAS PÉREZ"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "CENTRO DE CÓMPUTO 1"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "CENTRO DE CÓMPUTO 1"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 166,
+      "name": "PROGRAMACIÓN BÁSICA",
+      "group": "A",
+      "teachers": [
+        "LUIS MAURICIO LÓPEZ JARAMILLO"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "CENTRO DE CÓMPUTO 1"
+        },
+        {
+          "day": "JUEVES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "CENTRO DE CÓMPUTO 1"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 167,
+      "name": "PROGRAMACIÓN BÁSICA",
+      "group": "B",
+      "teachers": [
+        "ARGELIA BERNAL BAUTISTA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "CENTRO DE CÓMPUTO 1"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "CENTRO DE CÓMPUTO 1"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 168,
+      "name": "PROGRAMACIÓN BÁSICA",
+      "group": "C",
+      "teachers": [
+        "LUIS CARLOS PADIERNA GARCÍA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "CENTRO DE CÓMPUTO 1"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "CENTRO DE CÓMPUTO 1"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 169,
+      "name": "PROGRAMACIÓN ORIENTADA A OBJETOS Y EVENTOS",
+      "group": "A",
+      "teachers": [
+        "IGNACIO RAÚL ROSAS ROMAN"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "CENTRO DE CÓMPUTO 1"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "CENTRO DE CÓMPUTO 1"
+        },
+        {
+          "day": "VIERNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "CENTRO DE CÓMPUTO 1"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 170,
+      "name": "PROGRAMACIÓN ORIENTADA A OBJETOS Y EVENTOS",
+      "group": "B",
+      "teachers": [
+        "LUIS ALBERTO PÉREZ MARTÍNEZ",
+        "ORLANDO MIGUEL MEDINA CÁZARES"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "CENTRO DE CÓMPUTO 2"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "CENTRO DE CÓMPUTO 2"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "CENTRO DE CÓMPUTO 2"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 171,
+      "name": "PROGRAMACIÓN ORIENTADA A OBJETOS Y EVENTOS",
+      "group": "C",
+      "teachers": [
+        "SOLAI JEYAKUMAR"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "CENTRO DE CÓMPUTO 2"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "CENTRO DE CÓMPUTO 2"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "CENTRO DE CÓMPUTO 2"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 172,
+      "name": "PROPIEDADES FISICOQUÍMICAS",
+      "group": "A-I",
+      "teachers": [
+        "PATRICIA MARÍA OLMOS MOYA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "G2"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "LAB. DE QUÍMICA EDIF. G"
+        },
+        {
+          "day": "VIERNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F8"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 173,
+      "name": "QUÍMICA ANALÍTICA",
+      "group": "A-I",
+      "teachers": [
+        "JOSÉ ANTONIO REYES AGUILERA",
+        "ANDREA CEJA FERNÁNDEZ"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "09:00",
+          "end": "10:00",
+          "room": "G1"
+        },
+        {
+          "day": "VIERNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F6"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "08:00",
+          "end": "11:00",
+          "room": "LAB. DE QUÍMICA, EDIF. F"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 174,
+      "name": "QUÍMICA ANALÍTICA",
+      "group": "A-II",
+      "teachers": [
+        "JOSÉ ANTONIO REYES AGUILERA",
+        "ANDREA CEJA FERNÁNDEZ"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "09:00",
+          "end": "10:00",
+          "room": "G1"
+        },
+        {
+          "day": "VIERNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F6"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "11:00",
+          "room": "LAB. DE QUÍMICA, EDIF. F"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 175,
+      "name": "QUÍMICA GENERAL",
+      "group": "A-I",
+      "teachers": [
+        "ERIKA RODRÍGUEZ SEVILLA",
+        "JOSÉ ANTONIO REYES AGUILERA"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F8"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "12:00",
+          "end": "13:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        },
+        {
+          "day": "LUNES",
+          "start": "08:00",
+          "end": "11:00",
+          "room": "LAB. DE QUÍMICA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 176,
+      "name": "QUÍMICA GENERAL",
+      "group": "A-II",
+      "teachers": [
+        "ERIKA RODRÍGUEZ SEVILLA",
+        "MARÍA DE LOS ÁNGELES MENDOZA"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F8"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "12:00",
+          "end": "13:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        },
+        {
+          "day": "VIERNES",
+          "start": "12:00",
+          "end": "15:00",
+          "room": "LAB. DE QUÍMICA EDIF. G"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 177,
+      "name": "QUÍMICA GENERAL",
+      "group": "B-I",
+      "teachers": [
+        "SUSANA FIGUEROA GERSTENMAIER",
+        "JOSÉ ANTONIO REYES AGUILERA"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "09:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        },
+        {
+          "day": "LUNES",
+          "start": "08:00",
+          "end": "11:00",
+          "room": "LAB. DE QUÍMICA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 178,
+      "name": "QUÍMICA GENERAL",
+      "group": "B-II",
+      "teachers": [
+        "SUSANA FIGUEROA GERSTENMAIER",
+        "MARÍA DE LOS ÁNGELES MENDOZA"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "09:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        },
+        {
+          "day": "VIERNES",
+          "start": "12:00",
+          "end": "15:00",
+          "room": "LAB. DE QUÍMICA EDIF. G"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 179,
+      "name": "QUÍMICA GENERAL",
+      "group": "B-III",
+      "teachers": [
+        "SUSANA FIGUEROA GERSTENMAIER"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "09:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "12:00",
+          "end": "15:00",
+          "room": "LAB. DE QUÍMICA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 180,
+      "name": "QUÍMICA GENERAL",
+      "group": "C-IV",
+      "teachers": [
+        "RAQUEL GARZA HERNÁNDEZ",
+        "MIRIAM ELIZABETH CAMPOS NEGRETE"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F1"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "13:00",
+          "room": "F1"
+        },
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "15:00",
+          "room": "LAB. DE QUÍMICA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 181,
+      "name": "QUÍMICA INORGÁNICA DESCRIPTIVA",
+      "group": "A-I",
+      "teachers": [
+        "PATRICIA MARÍA OLMOS MOYA",
+        "MARÍA DE LOS ÁNGELES MENDOZA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "10:00",
+          "end": "11:00",
+          "room": "F8"
+        },
+        {
+          "day": "VIERNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "G1"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "15:00",
+          "room": "LAB. DE QUÍMICA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 182,
+      "name": "QUÍMICA ORGÁNICA AVANZADA",
+      "group": "A-I",
+      "teachers": [
+        "CHRISTIAN GÓMEZ SOLÍS",
+        "ANDREA CEJA FERNÁNDEZ"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "11:00",
+          "end": "12:00",
+          "room": "C3"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F8"
+        },
+        {
+          "day": "MARTES",
+          "start": "08:00",
+          "end": "11:00",
+          "room": "LAB. DE QUÍMICA, EDIF. F"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 183,
+      "name": "QUÍMICA ORGÁNICA BÁSICA",
+      "group": "A-I",
+      "teachers": [
+        "MINERVA PAOLA BARRIOS CEBALLOS",
+        "FERNADO HERNÁNDEZ BORJA"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "09:00",
+          "end": "10:00",
+          "room": "F5"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F5"
+        },
+        {
+          "day": "LUNES",
+          "start": "08:00",
+          "end": "11:00",
+          "room": "LAB. DE QUÍMICA, EDIF F"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 184,
+      "name": "QUÍMICA ORGÁNICA BÁSICA",
+      "group": "A-IV",
+      "teachers": [
+        "MINERVA PAOLA BARRIOS CEBALLOS",
+        "BIRZABITH MENDOZA NOVELO"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "09:00",
+          "end": "10:00",
+          "room": "F5"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F5"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "12:00",
+          "end": "15:00",
+          "room": "LAB. DE QUÍMICA, EDIF. F"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 185,
+      "name": "QUÍMICA ORGÁNICA BÁSICA",
+      "group": "B-II",
+      "teachers": [
+        "BIRZABITH MENDOZA NOVELO"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "08:00",
+          "end": "09:00",
+          "room": "G1"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "G1"
+        },
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "15:00",
+          "room": "LAB. DE QUÍMICA, EDIF. F"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 186,
+      "name": "QUÍMICA ORGÁNICA BÁSICA",
+      "group": "B-III",
+      "teachers": [
+        "BIRZABITH MENDOZA NOVELO",
+        "LIZETH MARIEL ZAVALA OCAMPO"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "08:00",
+          "end": "09:00",
+          "room": "G1"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "G1"
+        },
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "15:00",
+          "room": "LAB. DE QUÍMICA, EDIF. F"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 187,
+      "name": "QUÍMICA ORGÁNICA BÁSICA",
+      "group": "B-V",
+      "teachers": [
+        "BIRZABITH MENDOZA NOVELO",
+        "DULCE ARACELI GUZMÁN ROCHA"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "08:00",
+          "end": "09:00",
+          "room": "G1"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "G1"
+        },
+        {
+          "day": "VIERNES",
+          "start": "08:00",
+          "end": "11:00",
+          "room": "LAB. DE QUÍMICA, EDIF. F"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 188,
+      "name": "QUÍMICA ORGÁNICA BÁSICA",
+      "group": "C-VI",
+      "teachers": [
+        "MARÍA DE LOS ÁNGELES MENDOZA",
+        "FERNADO HERNÁNDEZ BORJA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F2"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "11:00",
+          "room": "F2"
+        },
+        {
+          "day": "VIERNES",
+          "start": "12:00",
+          "end": "15:00",
+          "room": "LAB. DE QUÍMICA, EDIF. F"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 189,
+      "name": "RADIOLOGÍA",
+      "group": "A",
+      "teachers": [
+        "MANUEL IVÁN LEÓN MADRID"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "C3"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "C3"
+        },
+        {
+          "day": "VIERNES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "C3"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 190,
+      "name": "SEGURIDAD E HIGIENE LABORAL",
+      "group": "A",
+      "teachers": [
+        "PALOMA GUADALUPE MEDINA MALDONADO"
+      ],
+      "sessions": [
+        {
+          "day": "JUEVES",
+          "start": "16:00",
+          "end": "19:00",
+          "room": "G1"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 191,
+      "name": "SEGURIDAD EN EQUIPO MÉDICO",
+      "group": "A",
+      "teachers": [
+        "JOSÉ GONZÁLEZ CRUZ"
+      ],
+      "sessions": [
+        {
+          "day": "SABADO",
+          "start": "08:00",
+          "end": "14:00",
+          "room": "AUDITORIO DEL EDIFICIO G"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 192,
+      "name": "SIMULACIÓN MOLECULAR Y QUÍMICA COMPUTACIONAL",
+      "group": "A",
+      "teachers": [
+        "JULIO CÉSAR ARMAS PÉREZ"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "17:00",
+          "end": "19:00",
+          "room": "CENTRO DE CÓMPUTO 1"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "17:00",
+          "end": "19:00",
+          "room": "CENTRO DE CÓMPUTO 1"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 193,
+      "name": "SÍNTESIS DE POLÍMEROS",
+      "group": "A",
+      "teachers": [
+        "BIRZABITH MENDOZA NOVELO"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "F5"
+        },
+        {
+          "day": "JUEVES",
+          "start": "14:00",
+          "end": "16:00",
+          "room": "LAB. DE QUÍMICA EDIF. F"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 194,
+      "name": "SISTEMAS LINEALES",
+      "group": "A",
+      "teachers": [
+        "CARSTEN HOLTFORT"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "C2"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "G1"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 195,
+      "name": "SISTEMAS LINEALES",
+      "group": "B",
+      "teachers": [
+        "ARTURO GONZÁLEZ VEGA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "F7"
+        },
+        {
+          "day": "VIERNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F7"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 196,
+      "name": "SISTEMAS LINEALES",
+      "group": "C",
+      "teachers": [
+        "JORGE MAURICIO FLORES MORENO"
+      ],
+      "sessions": [
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "C3"
+        },
+        {
+          "day": "VIERNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "C3"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 197,
+      "name": "TEMAS SELECTOS DE FÍSICA (MACHINE LEARNING)",
+      "group": "B",
+      "teachers": [
+        "LUIS CARLOS PADIERNA GARCÍA"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "14:00",
+          "end": "15:00",
+          "room": "CENTRO DE CÓMPUTO 1"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "14:00",
+          "end": "15:00",
+          "room": "CENTRO DE CÓMPUTO 1"
+        },
+        {
+          "day": "VIERNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "CENTRO DE CÓMPUTO 2"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 198,
+      "name": "TEORÍA CLÁSICA DE CAMPOS",
+      "group": "A",
+      "teachers": [
+        "FRANCISCO XAVIER LINARES CEDEÑO"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "17:00",
+          "end": "19:00",
+          "room": "F2"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "17:00",
+          "end": "19:00",
+          "room": "F2"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 199,
+      "name": "TERMODINÁMICA",
+      "group": "A-I",
+      "teachers": [
+        "NATALIA RINCÓN LONDOÑO",
+        "LAURA ELENA PUENTES PRADO"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        },
+        {
+          "day": "JUEVES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        },
+        {
+          "day": "JUEVES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "LAB. DE TERMODINÁMICA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 200,
+      "name": "TERMODINÁMICA",
+      "group": "A-II",
+      "teachers": [
+        "NATALIA RINCÓN LONDOÑO"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        },
+        {
+          "day": "JUEVES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "AUDITORIO DEL EDIF. G"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "LAB. DE TERMODINÁMICA, EDIF. G"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 201,
+      "name": "TERMODINÁMICA QUÍMICA",
+      "group": "A-I",
+      "teachers": [
+        "LAURA ELENA PUENTES PRADO"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F7"
+        },
+        {
+          "day": "JUEVES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "LAB. DE QUÍMICA, EDIF. G"
+        },
+        {
+          "day": "VIERNES",
+          "start": "10:00",
+          "end": "12:00",
+          "room": "C3"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 202,
+      "name": "TÓPICOS SELECTOS DE ASTRONOMÍA",
+      "group": "B",
+      "teachers": [
+        "OCTAVIO JOSÉ OBREGÓN DÍAZ"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "17:00",
+          "end": "19:00",
+          "room": "F5"
+        },
+        {
+          "day": "MIERCOLES",
+          "start": "17:00",
+          "end": "19:00",
+          "room": "F5"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 203,
+      "name": "TÓPICOS SELECTOS DE ASTRONOMÍA (MECÁNICA CELESTE)",
+      "group": "A",
+      "teachers": [
+        "CARSTEN HOLTFORT"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "C2"
+        },
+        {
+          "day": "JUEVES",
+          "start": "15:00",
+          "end": "17:00",
+          "room": "C2"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 204,
+      "name": "VARIABLE COMPLEJA",
+      "group": "A",
+      "teachers": [
+        "OSCAR GERARDO LOAIZA BRITO"
+      ],
+      "sessions": [
+        {
+          "day": "LUNES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "C2"
+        },
+        {
+          "day": "JUEVES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F8"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    },
+    {
+      "id": 205,
+      "name": "VARIABLE COMPLEJA",
+      "group": "B",
+      "teachers": [
+        "MARCO ANTONIO REYES SANTOS"
+      ],
+      "sessions": [
+        {
+          "day": "MARTES",
+          "start": "12:00",
+          "end": "14:00",
+          "room": "F9"
+        },
+        {
+          "day": "VIERNES",
+          "start": "08:00",
+          "end": "10:00",
+          "room": "F9"
+        }
+      ],
+      "source_letter_range": "M-Z"
+    }
+  ]
+}
