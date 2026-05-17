@@ -31,6 +31,8 @@ type GoogleCalendarEventListResponse = {
   items?: Array<{ id?: string }>;
 };
 
+const GOOGLE_CALENDAR_NETWORK_ERROR = 'No pude comunicarme con Google Calendar. Revisá tu conexión a internet y volvé a intentar.';
+
 const DAY_TO_UTC_WEEKDAY: Record<Day, number> = {
   LUNES: 1,
   MARTES: 2,
@@ -145,6 +147,14 @@ async function readGoogleError(response: Response) {
   }
 }
 
+async function googleCalendarFetch(url: string, init: RequestInit) {
+  try {
+    return await fetch(url, init);
+  } catch (error) {
+    throw new Error(error instanceof TypeError ? GOOGLE_CALENDAR_NETWORK_ERROR : 'Ocurrió un error inesperado al conectar con Google Calendar.');
+  }
+}
+
 async function deletePreviousFavoriteEvents(favorite: FavoriteSchedule, accessToken: string, apiBaseUrl: string) {
   const query = new URLSearchParams({
     maxResults: '250',
@@ -153,7 +163,7 @@ async function deletePreviousFavoriteEvents(favorite: FavoriteSchedule, accessTo
   query.append('privateExtendedProperty', 'horarioDciApp=true');
   query.append('privateExtendedProperty', `horarioDciFavoriteId=${favorite.id}`);
 
-  const listResponse = await fetch(`${apiBaseUrl}/calendars/primary/events?${query.toString()}`, {
+  const listResponse = await googleCalendarFetch(`${apiBaseUrl}/calendars/primary/events?${query.toString()}`, {
     headers: {
       Authorization: `Bearer ${accessToken}`,
     },
@@ -168,7 +178,7 @@ async function deletePreviousFavoriteEvents(favorite: FavoriteSchedule, accessTo
   const eventIds = (eventList.items ?? []).map((item) => item.id).filter((id): id is string => Boolean(id));
 
   for (const eventId of eventIds) {
-    const deleteResponse = await fetch(`${apiBaseUrl}/calendars/primary/events/${encodeURIComponent(eventId)}`, {
+    const deleteResponse = await googleCalendarFetch(`${apiBaseUrl}/calendars/primary/events/${encodeURIComponent(eventId)}`, {
       headers: {
         Authorization: `Bearer ${accessToken}`,
       },
@@ -197,7 +207,7 @@ export async function syncFavoriteToGoogleCalendar(
   await deletePreviousFavoriteEvents(favorite, accessToken, config.apiBaseUrl);
 
   for (const eventPayload of eventPayloads) {
-    const response = await fetch(`${config.apiBaseUrl}/calendars/primary/events`, {
+    const response = await googleCalendarFetch(`${config.apiBaseUrl}/calendars/primary/events`, {
       body: JSON.stringify(eventPayload),
       headers: {
         Authorization: `Bearer ${accessToken}`,

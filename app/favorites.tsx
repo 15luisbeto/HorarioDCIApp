@@ -4,7 +4,7 @@ import { IconSymbol } from '@/components/ui/icon-symbol';
 import { ThemedText } from '@/components/themed-text';
 import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
-import type { FavoriteSchedule } from '@/lib/schedules';
+import { buildScheduleOptionFromCourses, DAY_ORDER, type FavoriteSchedule } from '@/lib/schedules';
 import { useAppPreferences } from '@/providers/app-preferences';
 
 export default function FavoritesScreen() {
@@ -93,10 +93,54 @@ function FavoriteCard({ favorite, index, colors, canMoveDown, canMoveUp, onMoveD
         ))}
       </View>
 
+      <WeeklySchedulePreview favorite={favorite} colors={colors} />
+
       <View style={styles.actionsRow}>
         <InlineActionButton disabled={!canMoveUp} icon="chevron.right" label="Subir" colors={colors} onPress={onMoveUp} rotation="-90deg" />
         <InlineActionButton disabled={!canMoveDown} icon="chevron.right" label="Bajar" colors={colors} onPress={onMoveDown} rotation="90deg" />
         <InlineActionButton icon="bookmark.fill" label="Quitar" colors={colors} onPress={onRemove} destructive />
+      </View>
+    </View>
+  );
+}
+
+function WeeklySchedulePreview({ favorite, colors }: { favorite: FavoriteSchedule; colors: (typeof Colors)['light'] }) {
+  const option = buildScheduleOptionFromCourses(favorite.courses, favorite.id);
+
+  return (
+    <View style={[styles.weeklyPreview, { backgroundColor: colors.surfaceElevated, borderColor: colors.border }]}> 
+      <View style={styles.weeklyPreviewHeader}>
+        <ThemedText type="defaultSemiBold">Vista semanal</ThemedText>
+        <ThemedText style={{ color: colors.textMuted }}>{option.courses.length} materias</ThemedText>
+      </View>
+
+      <View style={styles.dayList}>
+        {DAY_ORDER.map((day) => {
+          const sessions = option.sessionsByDay[day];
+
+          return (
+            <View key={`${favorite.id}-${day}`} style={[styles.dayCard, { backgroundColor: colors.surface, borderColor: colors.border }]}> 
+              <View style={styles.dayCardHeader}>
+                <ThemedText type="defaultSemiBold">{day}</ThemedText>
+                <ThemedText style={{ color: colors.textMuted }}>{sessions.length} clase{sessions.length === 1 ? '' : 's'}</ThemedText>
+              </View>
+
+              {sessions.length === 0 ? (
+                <ThemedText style={{ color: colors.textMuted }}>Sin clases</ThemedText>
+              ) : (
+                <View style={styles.sessionList}>
+                  {sessions.map((session) => (
+                    <View key={`${favorite.id}-${day}-${session.courseName}-${session.group}-${session.start}-${session.room}`} style={[styles.sessionItem, { borderLeftColor: colors.tint }]}> 
+                      <ThemedText type="defaultSemiBold">{session.start}–{session.end}</ThemedText>
+                      <ThemedText>{session.courseName}</ThemedText>
+                      <ThemedText style={{ color: colors.textMuted }}>{session.group} · {session.room}</ThemedText>
+                    </View>
+                  ))}
+                </View>
+              )}
+            </View>
+          );
+        })}
       </View>
     </View>
   );
@@ -141,6 +185,13 @@ const styles = StyleSheet.create({
   favoriteTitleInput: { borderWidth: 1, borderRadius: 14, paddingHorizontal: 12, paddingVertical: 10, fontSize: 15, fontWeight: '600' },
   courseList: { gap: 8 },
   courseItem: { borderWidth: 1, borderRadius: 16, padding: 12, gap: 3 },
+  weeklyPreview: { borderWidth: 1, borderRadius: 20, padding: 14, gap: 12 },
+  weeklyPreviewHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 10 },
+  dayList: { gap: 10 },
+  dayCard: { borderWidth: 1, borderRadius: 16, padding: 12, gap: 8 },
+  dayCardHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 10 },
+  sessionList: { gap: 8 },
+  sessionItem: { borderLeftWidth: 3, paddingLeft: 10, gap: 2 },
   actionsRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
   inlineActionButton: { flexDirection: 'row', alignItems: 'center', gap: 6, borderWidth: 1, borderRadius: 999, paddingHorizontal: 12, paddingVertical: 8 },
 });
