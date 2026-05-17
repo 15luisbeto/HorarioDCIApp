@@ -27,8 +27,10 @@ function getAuthPlatform(): GoogleCalendarAuthPlatform {
 export function useGoogleCalendarAuth() {
   const config = getGoogleCalendarConfig();
   const platform = getAuthPlatform();
-  const redirectUri = AuthSession.makeRedirectUri({ scheme: GOOGLE_CALENDAR_REDIRECT_SCHEME });
-  const nativeRedirectUri = 'com.luisbeto.horariodciapp:/oauthredirect';
+  const redirectUri = AuthSession.makeRedirectUri({
+    path: 'oauthredirect',
+    scheme: GOOGLE_CALENDAR_REDIRECT_SCHEME,
+  });
   const isConfigured = hasGoogleCalendarClientId(platform);
   const [accessToken, setAccessToken] = useState<string | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
@@ -37,7 +39,7 @@ export function useGoogleCalendarAuth() {
     {
       androidClientId: config.androidClientId || GOOGLE_CLIENT_ID_PLACEHOLDER,
       iosClientId: config.iosClientId || GOOGLE_CLIENT_ID_PLACEHOLDER,
-      redirectUri: platform === 'web' ? redirectUri : undefined,
+      redirectUri,
       scopes: [...config.scopes],
       webClientId: config.webClientId || GOOGLE_CLIENT_ID_PLACEHOLDER,
     }
@@ -82,7 +84,7 @@ export function useGoogleCalendarAuth() {
     isReady: Boolean(request),
     platform,
     redirectScheme: GOOGLE_CALENDAR_REDIRECT_SCHEME,
-    redirectUri: platform === 'web' ? redirectUri : nativeRedirectUri,
+    redirectUri,
     scopes: config.scopes,
     signIn,
   };
