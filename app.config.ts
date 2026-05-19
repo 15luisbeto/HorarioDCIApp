@@ -30,6 +30,7 @@ const config: ExpoConfig = {
     edgeToEdgeEnabled: true,
     package: 'com.luisbeto.horariodciapp',
     predictiveBackGestureEnabled: false,
+    versionCode: 2,
   },
   extra: {
     eas: {
