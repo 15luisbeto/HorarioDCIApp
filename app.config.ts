@@ -14,7 +14,7 @@ const GOOGLE_CALENDAR_SCOPES = [
 const config: ExpoConfig = {
   name: 'HorarioDCIApp',
   slug: 'HorarioDCIApp',
-  version: '1.0.0',
+  version: '1.1.0',
   orientation: 'portrait',
   icon: './assets/images/icon.png',
   scheme: 'com.luisbeto.horariodciapp',
@@ -30,7 +30,7 @@ const config: ExpoConfig = {
     edgeToEdgeEnabled: true,
     package: 'com.luisbeto.horariodciapp',
     predictiveBackGestureEnabled: false,
-    versionCode: 2,
+    versionCode: 3,
   },
   extra: {
     eas: {
