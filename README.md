@@ -20,6 +20,8 @@ App Expo para ayudar a estudiantes de DCI a generar horarios sin choques, guarda
 
 Expo Go sigue siendo válido para probar lógica local de UI, datos, favoritos, generación de horarios y exportación sin depender del redirect nativo de Google.
 
+Para probar en un teléfono físico con QR, permisos, red local/túnel y límites de Expo Go, seguí la [guía de pruebas locales en dispositivo](docs/local-device-testing.md).
+
 ## Development build para Google OAuth
 
 Para probar el flujo real de Google OAuth y Google Calendar en Android, usá una development build instalada. Esto es necesario porque el redirect OAuth debe validarse con el package nativo y el SHA-1 de la build, no solo con Expo Go.

@@ -1,0 +1,90 @@
+schema: spec-driven
+
+project: horariodciapp
+artifact_store: hybrid
+workflow:
+  interaction: interactive
+  artifact_store: hybrid
+  risk_policy: ask-on-risk
+
+context: |
+  Tech stack: Expo SDK 54, React 19, React Native 0.81, TypeScript strict, expo-router.
+  Architecture: file-based routes under app/, reusable components, hooks, lib services, static schedule data.
+  Runtime data: expo-sqlite, Google Calendar OAuth via Expo public env vars, PDF/sharing export.
+  Package manager: pnpm via pnpm-lock.yaml.
+  Release tooling: EAS configured in eas.json for development, preview, and production Android builds.
+  Quality: Expo ESLint is configured; TypeScript is available but no typecheck script is defined.
+  Testing: no direct test runner, test scripts, test files, coverage, integration, or E2E tooling detected.
+
+strict_tdd: false
+
+testing:
+  detected: 2026-06-17
+  strict_tdd: false
+  reason: No direct test runner, test script, or test files were detected; strict TDD cannot be enforced until a runner is added.
+  package_manager: pnpm
+  test_runner:
+    available: false
+    framework: null
+    command: null
+  test_layers:
+    unit:
+      available: false
+      tool: null
+    integration:
+      available: false
+      tool: null
+    e2e:
+      available: false
+      tool: null
+  coverage:
+    available: false
+    command: null
+  quality:
+    linter:
+      available: true
+      command: pnpm lint
+    type_checker:
+      available: true
+      command: pnpm exec tsc --noEmit
+      note: TypeScript is installed and strict mode is enabled, but package.json has no typecheck script.
+    formatter:
+      available: false
+      command: null
+    build:
+      available: true
+      command: pnpm dlx eas-cli@latest build --profile production --platform android
+      note: EAS Android profiles are configured; no local build script is defined in package.json.
+
+rules:
+  proposal:
+    - Keep scope tied to student schedule generation, favorites, exports, or Google Calendar integration unless explicitly approved.
+    - Include rollback plan for risky data, auth, storage, export, or EAS/release changes.
+    - Ask before changing OAuth redirect/package identifiers, academic data shape, or persistence behavior.
+  specs:
+    - Use RFC 2119 keywords for requirements.
+    - Use Given/When/Then scenarios for user-visible behavior.
+    - Cover Expo Go versus development build differences when OAuth or native capabilities are involved.
+  design:
+    - Document data flow across app routes, hooks, lib modules, SQLite, and external Google Calendar APIs.
+    - Include tradeoffs for platform-specific behavior, especially Android development builds and Expo Go limitations.
+  tasks:
+    - Group tasks by reviewable work unit and keep changes suitable for ask-on-risk review.
+    - Include verification steps using available commands; if tests are unavailable, state manual validation explicitly.
+  apply:
+    - Follow existing Expo Router, TypeScript strict, path alias @/*, and lowercase kebab-file naming conventions.
+    - Do not introduce secrets; only use Expo public env variables documented in .env.example.
+    tdd: false
+    test_command: ""
+    lint_command: pnpm lint
+    typecheck_command: pnpm exec tsc --noEmit
+  verify:
+    - Run pnpm lint for lintable changes.
+    - Run pnpm exec tsc --noEmit for type-sensitive changes.
+    - For OAuth/native behavior, verify in a development build rather than Expo Go.
+    test_command: ""
+    build_command: pnpm dlx eas-cli@latest build --profile production --platform android
+    coverage_threshold: 0
+  archive:
+    - Warn before merging destructive deltas or changing source academic data assumptions.
+    - Keep completed change artifacts under openspec/changes/archive/YYYY-MM-DD-{change-name}/.
