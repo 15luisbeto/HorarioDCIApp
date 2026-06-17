@@ -1,7 +1,7 @@
 # Skill Registry — HorarioDCIApp
 
-Detected: 2026-06-17  
-Project: `horariodciapp`  
+Detected: 2026-06-17
+Project: `horariodciapp`
 Mode: hybrid SDD initialization
 
 ## Resolution

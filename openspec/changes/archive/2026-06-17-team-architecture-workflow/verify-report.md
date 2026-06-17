@@ -2,8 +2,8 @@
 
 ## Verification Report
 
-**Change**: `team-architecture-workflow`  
-**Version**: N/A  
+**Change**: `team-architecture-workflow`
+**Version**: N/A
 **Mode**: Standard Verify; Strict TDD not loaded because no `strict_tdd: true` instruction was present and no test runner exists.
 
 ### Completeness
@@ -52,8 +52,8 @@ $ git status --short -- app components hooks lib providers data docs openspec/ch
 ?? openspec/changes/team-architecture-workflow/tasks.md
 ```
 
-**Lint**: ➖ Not run. The implemented change is Markdown/OpenSpec documentation only; no lintable runtime source changed.  
-**Runtime tests**: ➖ Not available/applicable for this docs-only architecture change; package scripts contain no test runner.  
+**Lint**: ➖ Not run. The implemented change is Markdown/OpenSpec documentation only; no lintable runtime source changed.
+**Runtime tests**: ➖ Not available/applicable for this docs-only architecture change; package scripts contain no test runner.
 **Coverage**: ➖ Not available.
 
 ### Spec Compliance Matrix
@@ -95,8 +95,8 @@ $ git status --short -- app components hooks lib providers data docs openspec/ch
 
 ### Issues Found
 
-**CRITICAL**: None.  
-**WARNING**: None.  
+**CRITICAL**: None.
+**WARNING**: None.
 **SUGGESTION**: Consider adding a future docs-link checker or Markdown lint step if the project adopts documentation tooling.
 
 ### Skill Resolution
