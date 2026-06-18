@@ -71,7 +71,7 @@ Ejemplos de excepción válida:
 
 Ejemplos que NO justifican excepción:
 
-- “es un cambio pequeño”; 
+- “es un cambio pequeño”;
 - “solo es documentación”;
 - “no quiero esperar CI”.
 
