@@ -1,0 +1,90 @@
+name: Release or Play Console testing
+description: Coordinate internal, closed, or public testing/release work controlled by the Play Console owner.
+title: "[Release]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to coordinate Android Play Console testing tracks, release candidates, public releases, or release-risk review.
+        `15luisbeto` owns the Play Console license and controls internal, closed, and public publication unless explicitly delegated.
+  - type: input
+    id: release-owner
+    attributes:
+      label: Release owner
+      description: Who is responsible for publication, announcement, and rollback?
+      placeholder: "15luisbeto or delegated maintainer"
+    validations:
+      required: true
+  - type: dropdown
+    id: release-track
+    attributes:
+      label: Target track or release path
+      description: Select the intended distribution path.
+      options:
+        - internal testing
+        - closed testing
+        - public production
+        - development build only
+        - release planning / not publishing yet
+    validations:
+      required: true
+  - type: input
+    id: version-info
+    attributes:
+      label: Version information
+      description: App version, Android versionCode, build ID, or commit SHA.
+      placeholder: "version 1.2.0, versionCode 4, commit abc123, build URL..."
+    validations:
+      required: true
+  - type: textarea
+    id: release-scope
+    attributes:
+      label: Release scope
+      description: What is included in this release or test build?
+      placeholder: |
+        - Feature/fix/docs included
+        - What is intentionally excluded
+    validations:
+      required: true
+  - type: textarea
+    id: validation-plan
+    attributes:
+      label: Validation plan
+      description: List automated and manual checks required before publication or tester announcement.
+      placeholder: |
+        - [ ] pnpm test
+        - [ ] pnpm lint
+        - [ ] pnpm typecheck
+        - [ ] Expo Go smoke check, if applicable
+        - [ ] Development build validation, if native/OAuth behavior changed
+        - [ ] Play Console track install tested, if publishing to testers
+    validations:
+      required: true
+  - type: textarea
+    id: native-oauth-checks
+    attributes:
+      label: Native/OAuth/Calendar checks
+      description: Required when package identifiers, redirects, SHA-1, Google OAuth, Calendar sync, or EAS config are involved.
+      placeholder: "State N/A or describe development-build / Play Console validation evidence. Expo Go is not final evidence for OAuth/native behavior."
+    validations:
+      required: true
+  - type: textarea
+    id: tester-communication
+    attributes:
+      label: Tester communication
+      description: How will testers be notified and what should they validate?
+      placeholder: |
+        - Tester group/track:
+        - Install instructions:
+        - Features to test:
+        - Known limitations:
+    validations:
+      required: true
+  - type: textarea
+    id: rollback-plan
+    attributes:
+      label: Rollback or stop-release plan
+      description: What happens if the build fails validation or testers report a blocker?
+      placeholder: "Pause rollout, keep previous version, publish hotfix, remove tester announcement, etc."
+    validations:
+      required: true
