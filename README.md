@@ -22,6 +22,20 @@ Expo Go sigue siendo válido para probar lógica local de UI, datos, favoritos, 
 
 Para probar en un teléfono físico con QR, permisos, red local/túnel y límites de Expo Go, seguí la [guía de pruebas locales en dispositivo](docs/local-device-testing.md).
 
+## Verificación automatizada
+
+Antes de preparar cambios para revisión, ejecutá:
+
+```bash
+pnpm test
+pnpm lint
+pnpm typecheck
+```
+
+`pnpm test` ejecuta la suite Jest con `jest-expo` para pruebas deterministas de dominio en `lib/schedules.ts`. Esta base no cubre componentes, snapshots, SQLite, PDF/share, Google Calendar, OAuth nativo ni flujos E2E.
+
+El flujo real de Google OAuth y los redirects nativos siguen requiriendo una development build de Expo; Expo Go y Jest no validan el package nativo ni el SHA-1 de Android.
+
 ## Development build para Google OAuth
 
 Para probar el flujo real de Google OAuth y Google Calendar en Android, usá una development build instalada. Esto es necesario porque el redirect OAuth debe validarse con el package nativo y el SHA-1 de la build, no solo con Expo Go.
