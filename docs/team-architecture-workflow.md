@@ -81,6 +81,7 @@ Every non-trivial PR should include:
 - Prefer one reviewer familiar with the touched capability and one maintainer review for risky changes.
 - `main` must not receive direct push or merge without authorization from the repository owner/maintainer, currently `15luisbeto`.
 - Do not merge with unresolved lint/typecheck failures unless the maintainer explicitly accepts and records the risk.
+- Configure GitHub branch protection for `main` using `docs/branch-protection.md` so CI and PR review enforce this workflow.
 
 ### Release readiness checklist
 
