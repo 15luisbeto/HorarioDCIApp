@@ -1,0 +1,99 @@
+name: Feature request
+description: Propose a feature with scope, owner, risk, validation, and review-size expectations.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for new or changed product behavior. Optional/manual labels a maintainer may add later: `type: feature`, `risk: native/oauth`, `risk: storage`, `risk: data`, or `risk: release`.
+        Risky work should start from an issue before implementation. Keep PRs near the 400-line review budget or document a split/exception.
+  - type: input
+    id: owner
+    attributes:
+      label: Owner
+      description: Who is responsible for follow-up and rollback?
+      placeholder: "@username or name"
+    validations:
+      required: true
+  - type: textarea
+    id: problem-context
+    attributes:
+      label: Problem or context
+      description: What user/team problem are we solving, and why now?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-outcome
+    attributes:
+      label: Proposed outcome
+      description: What should users or maintainers be able to do after this change?
+    validations:
+      required: true
+  - type: dropdown
+    id: affected-capability
+    attributes:
+      label: Affected capability
+      options:
+        - schedules
+        - favorites/settings/storage
+        - exports/sharing
+        - Google Calendar/OAuth
+        - institutional data
+        - EAS/release/Play Console
+        - docs/governance
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: scope-non-goals
+    attributes:
+      label: Scope and non-goals
+      description: Define what is included and what is intentionally out of scope.
+      placeholder: |
+        Scope:
+        - ...
+
+        Non-goals:
+        - ...
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: List observable outcomes and checks.
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: dropdown
+    id: risk-category
+    attributes:
+      label: Risk category
+      description: Pick the highest relevant risk. Labels are guidance only and are not enforced by this form.
+      options:
+        - low/docs or UI-only
+        - OAuth/native redirect/package identifier
+        - storage/persistence/migration
+        - academic data shape/dataset compatibility
+        - EAS/release/Play Console
+        - unknown or needs triage
+    validations:
+      required: true
+  - type: textarea
+    id: validation-path
+    attributes:
+      label: Validation path
+      description: How will this be verified? Include commands, manual checks, and whether Expo Go is enough.
+      placeholder: "OAuth/native or Play Console work requires development build or Play Console testing coordinated by `15luisbeto`."
+    validations:
+      required: true
+  - type: textarea
+    id: review-size-expectation
+    attributes:
+      label: Review-size expectation
+      description: Will implementation fit within roughly 400 changed lines? If not, propose a split or exception path.
+      placeholder: "Expected small PR / needs split / needs documented maintainer exception."
+    validations:
+      required: true

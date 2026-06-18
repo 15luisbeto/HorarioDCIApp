@@ -1,10 +1,10 @@
-# Team Workflow Governance Specification
+# Team Workflow Governance Delta Specification
 
 ## Purpose
 
-Define team operating rules for branches, PRs, ownership, reviews, and releases for a four-person HorarioDCIApp team.
+Extend team workflow governance with GitHub collaboration templates that make review expectations visible before implementation and review.
 
-## Requirements
+## MODIFIED Requirements
 
 ### Requirement: Reviewable Team Workflow
 
@@ -29,6 +29,8 @@ Team changes MUST use traceable Git/GitHub practices that keep ownership, risk, 
 - GIVEN a release candidate is prepared
 - WHEN maintainers review readiness
 - THEN lint/typecheck status, unresolved risk exceptions, and ownership of release notes MUST be visible
+
+## ADDED Requirements
 
 ### Requirement: Structured Collaboration Intake
 
