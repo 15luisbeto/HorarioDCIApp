@@ -13,24 +13,24 @@ context: |
   Runtime data: expo-sqlite, Google Calendar OAuth via Expo public env vars, PDF/sharing export.
   Package manager: pnpm via pnpm-lock.yaml.
   Release tooling: EAS configured in eas.json for development, preview, and production Android builds.
-  Quality: Expo ESLint is configured; TypeScript is available but no typecheck script is defined.
-  Testing: no direct test runner, test scripts, test files, coverage, integration, or E2E tooling detected.
+  Quality: Expo ESLint is configured; TypeScript strict mode is available through pnpm typecheck.
+  Testing: Jest with jest-expo is configured for deterministic unit/domain tests; integration, E2E, native/OAuth, and component tests are not part of the first testing layer.
 
-strict_tdd: false
+strict_tdd: true
 
 testing:
   detected: 2026-06-17
-  strict_tdd: false
-  reason: No direct test runner, test script, or test files were detected; strict TDD cannot be enforced until a runner is added.
+  strict_tdd: true
+  reason: Jest/jest-expo test runner is now available; strict TDD can be enforced for eligible deterministic domain changes while native/OAuth work still requires separate manual/development-build validation.
   package_manager: pnpm
   test_runner:
-    available: false
-    framework: null
-    command: null
+    available: true
+    framework: jest-expo
+    command: pnpm test
   test_layers:
     unit:
-      available: false
-      tool: null
+      available: true
+      tool: jest-expo
     integration:
       available: false
       tool: null
@@ -46,8 +46,8 @@ testing:
       command: pnpm lint
     type_checker:
       available: true
-      command: pnpm exec tsc --noEmit
-      note: TypeScript is installed and strict mode is enabled, but package.json has no typecheck script.
+      command: pnpm typecheck
+      note: TypeScript strict mode is enabled; pnpm typecheck runs tsc --noEmit.
     formatter:
       available: false
       command: null
@@ -74,15 +74,15 @@ rules:
   apply:
     - Follow existing Expo Router, TypeScript strict, path alias @/*, and lowercase kebab-file naming conventions.
     - Do not introduce secrets; only use Expo public env variables documented in .env.example.
-    tdd: false
-    test_command: ""
+    tdd: true
+    test_command: pnpm test
     lint_command: pnpm lint
-    typecheck_command: pnpm exec tsc --noEmit
+    typecheck_command: pnpm typecheck
   verify:
     - Run pnpm lint for lintable changes.
-    - Run pnpm exec tsc --noEmit for type-sensitive changes.
+    - Run pnpm typecheck for type-sensitive changes.
     - For OAuth/native behavior, verify in a development build rather than Expo Go.
-    test_command: ""
+    test_command: pnpm test
     build_command: pnpm dlx eas-cli@latest build --profile production --platform android
     coverage_threshold: 0
   archive:
