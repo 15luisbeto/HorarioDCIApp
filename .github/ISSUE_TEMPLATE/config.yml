@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Local device testing guide
+    url: https://github.com/15luisbeto/HorarioDCIApp/blob/main/docs/local-device-testing.md
+    about: Review Expo Go, development build, and Play Console validation boundaries before reporting device-specific behavior.
+  - name: Team architecture workflow
+    url: https://github.com/15luisbeto/HorarioDCIApp/blob/main/docs/team-architecture-workflow.md
+    about: Review ownership, risk, branch, PR, and review-budget expectations.

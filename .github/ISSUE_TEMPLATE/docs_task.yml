@@ -1,0 +1,78 @@
+name: Docs or task
+description: Track documentation, governance, maintenance, or non-feature work.
+title: "[Task]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for docs, governance, maintenance, or other non-bug/non-feature work. Optional/manual labels a maintainer may add later: `type: docs`, `type: task`, or a relevant `risk:*` label.
+        Template-only work should not add CI automation, label enforcement, branch protection, or runtime behavior unless a separate change explicitly approves it.
+  - type: input
+    id: owner
+    attributes:
+      label: Owner
+      description: Who is responsible for follow-up and rollback?
+      placeholder: "@username or name"
+    validations:
+      required: true
+  - type: textarea
+    id: task-context
+    attributes:
+      label: Task context
+      description: What needs to be updated or decided, and why?
+    validations:
+      required: true
+  - type: dropdown
+    id: affected-area
+    attributes:
+      label: Affected area
+      options:
+        - docs/team workflow
+        - docs/local device testing
+        - GitHub templates/governance
+        - OpenSpec artifacts
+        - release notes
+        - app documentation
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-checks
+    attributes:
+      label: Acceptance checks
+      description: What checks prove the task is complete?
+      placeholder: |
+        - [ ] Content matches source docs/specs
+        - [ ] No runtime code changed
+        - [ ] Review notes include any N/A verification commands
+    validations:
+      required: true
+  - type: dropdown
+    id: risk-category
+    attributes:
+      label: Risk category
+      description: Pick the highest relevant risk. Labels are guidance only and are not enforced by this form.
+      options:
+        - low/docs or governance-only
+        - OAuth/native redirect/package identifier
+        - storage/persistence/migration
+        - academic data shape/dataset compatibility
+        - EAS/release/Play Console
+        - unknown or needs triage
+    validations:
+      required: true
+  - type: textarea
+    id: validation-path
+    attributes:
+      label: Validation path
+      description: How should reviewers validate this task? Mention docs review, YAML/source inspection, commands, or device/build boundaries.
+      placeholder: "For native/OAuth content, state that Expo Go is not final evidence; use development build or Play Console when behavior is affected."
+    validations:
+      required: true
+  - type: textarea
+    id: review-budget
+    attributes:
+      label: Review budget notes
+      description: State whether this should fit within roughly 400 changed lines or needs a split/exception.
+    validations:
+      required: true

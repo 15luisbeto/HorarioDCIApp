@@ -1,0 +1,97 @@
+name: Bug report
+description: Report a defect with ownership, risk, reproduction, and validation context.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for defects. Optional/manual labels a maintainer may add later: `type: bug`, `risk: native/oauth`, `risk: storage`, `risk: data`, or `risk: release`.
+        Do not use Expo Go as final evidence for Google OAuth, native redirects, package identifiers, or Play Console behavior; coordinate development-build or Play Console validation with `15luisbeto` when relevant.
+  - type: input
+    id: owner
+    attributes:
+      label: Owner
+      description: Who is responsible for follow-up and rollback?
+      placeholder: "@username or name"
+    validations:
+      required: true
+  - type: dropdown
+    id: affected-capability
+    attributes:
+      label: Affected capability
+      options:
+        - schedules
+        - favorites/settings/storage
+        - exports/sharing
+        - Google Calendar/OAuth
+        - institutional data
+        - EAS/release/Play Console
+        - docs/governance
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: observed-behavior
+    attributes:
+      label: Observed behavior
+      description: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What should have happened?
+    validations:
+      required: true
+  - type: textarea
+    id: context-environment
+    attributes:
+      label: Context and environment
+      description: Device, OS, build type, Expo Go/development build/Play Console track, app version, dataset period, or other context.
+      placeholder: "Android/iOS, Expo Go or development build, version/track, network conditions..."
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest reliable path to reproduce the defect.
+      placeholder: |
+        1. Go to ...
+        2. Tap ...
+        3. See ...
+    validations:
+      required: true
+  - type: dropdown
+    id: risk-category
+    attributes:
+      label: Risk category
+      description: Pick the highest relevant risk. Labels are guidance only and are not enforced by this form.
+      options:
+        - low/docs or UI-only
+        - OAuth/native redirect/package identifier
+        - storage/persistence/migration
+        - academic data shape/dataset compatibility
+        - EAS/release/Play Console
+        - unknown or needs triage
+    validations:
+      required: true
+  - type: textarea
+    id: validation-path
+    attributes:
+      label: Validation path
+      description: How should the fix be verified? Mention `pnpm test`, `pnpm lint`, `pnpm typecheck`, manual checks, and device/build path.
+      placeholder: "Expo Go is OK for local UI/data smoke checks; OAuth/native requires development build or Play Console testing."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: What must be true for this bug to be considered fixed?
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
